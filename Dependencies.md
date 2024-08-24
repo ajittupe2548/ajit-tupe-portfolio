@@ -36,6 +36,12 @@ A library for creating animations and transitions in React applications with eas
 
 -   Features: Provides powerful and intuitive animation APIs, supports complex animations like gestures and transitions, integrates with React’s component model, offers smooth and performant animations.
 
+### sharp
+
+A high-performance image processing library for resizing, converting, and manipulating images.
+
+-   Features: Supports multiple image formats (JPEG, PNG, WebP, etc.), enables fast image resizing and optimization, reduces file sizes for web use, performs image transformations like cropping and rotation, works efficiently in Node.js environments.
+
 ## devDependencies
 
 ### @types/node
