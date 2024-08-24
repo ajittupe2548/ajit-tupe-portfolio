@@ -18,6 +18,24 @@ react-dom is a package that provides DOM-specific methods for React. It's respon
 
 -   Features: Rendering Components to the DOM, hydrate() for Server-Side Rendering, Portals
 
+### next-themes
+
+A Next.js library for managing and switching between themes in a React application.
+
+-   Features: Simplifies theme management in Next.js apps, supports dark and light modes, integrates with Tailwind CSS for easy styling, provides automatic theme switching based on user preferences.
+
+### lucide-react
+
+A collection of high-quality, customizable icons for React applications.
+
+-   Features: Provides a wide range of vector icons, supports customization and styling through props, designed for accessibility and performance, integrates seamlessly with React projects.
+
+### framer-motion
+
+A library for creating animations and transitions in React applications with ease.
+
+-   Features: Provides powerful and intuitive animation APIs, supports complex animations like gestures and transitions, integrates with React’s component model, offers smooth and performant animations.
+
 ## devDependencies
 
 ### @types/node
