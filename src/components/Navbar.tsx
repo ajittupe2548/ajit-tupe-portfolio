@@ -4,14 +4,17 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Home, Briefcase, FileText } from 'lucide-react';
+import { Briefcase, FileText, User, Settings } from 'lucide-react';
 import logo from '@/assets/Logo.jpeg';
 
 import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
-    { name: 'Home', href: '/', icon: Home },
-    { name: 'Projects', href: '/projects', icon: Briefcase },
+    { name: 'About', href: '/#about', icon: User },
+    { name: 'Skills', href: '/#skills', icon: Settings },
+    { name: 'Experience', href: '/#experience', icon: Settings },
+    { name: 'Projects', href: '/#projects', icon: Briefcase },
+    { name: 'Contact', href: '/#contact', icon: Briefcase },
     { name: 'Resume', href: '/resume', icon: FileText },
 ];
 
@@ -23,7 +26,7 @@ const Navbar = () => {
             <nav className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-between h-16'>
                     <div className='flex items-center'>
-                        <Link href='/' className='text-3xl font-bold'>
+                        <Link href='/#home' className='text-3xl font-bold'>
                             <Image
                                 src={logo}
                                 alt='Logo'
