@@ -22,28 +22,28 @@ const AboutMe: React.FC = () => {
                             <a
                                 target='_blank'
                                 className='transition-all text-pink-500 hover:scale-125 duration-300'
-                                href='https://github.com/Abhishek-Rout'
+                                href='https://github.com/ajittupe2548'
                             >
                                 <Github height={30} width={30} />
                             </a>
                             <a
                                 target='_blank'
                                 className='transition-all text-pink-500 hover:scale-125 duration-300'
-                                href='https://www.linkedin.com/in/abhishek-rout-032330192/'
+                                href='https://www.linkedin.com/in/ajittupe2548/'
                             >
                                 <Linkedin height={30} width={30} />
                             </a>
                             <a
                                 target='_blank'
                                 className='transition-all text-pink-500 hover:scale-125 duration-300'
-                                href='https://www.facebook.com/abhishek.rout.1829/'
+                                href='https://www.facebook.com/ajittupe2548/'
                             >
                                 <Facebook height={30} width={30} />
                             </a>
                             <a
                                 target='_blank'
                                 className='transition-all text-pink-500 hover:scale-125 duration-300'
-                                href='https://x.com/Mr_AbhishekRout'
+                                href='https://x.com/ajittupe2548'
                             >
                                 <svg
                                     stroke='currentColor'
