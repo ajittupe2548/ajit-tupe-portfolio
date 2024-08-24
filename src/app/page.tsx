@@ -3,9 +3,10 @@ import Introduction from '@/components/Introduction';
 import AboutMe from '@/components/AboutMe';
 import Technologies from '@/components/Technologies';
 import FeaturedProjects from '@/components/FeaturedProjects';
-import Timeline from '@/components/Timeline';
-import Languages from '@/components/Languages';
-import Hobbies from '@/components/Hobbies';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
+// import Languages from '@/components/Languages';
+// import Hobbies from '@/components/Hobbies';
 
 const HomePage: React.FC = () => {
     return (
@@ -36,7 +37,14 @@ const HomePage: React.FC = () => {
                     className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'
                     id='experience'
                 >
-                    <Timeline />
+                    <Experience />
+                </div>
+
+                <div
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'
+                    id='education'
+                >
+                    <Education />
                 </div>
 
                 <div
