@@ -1,11 +1,8 @@
-import { nextui } from '@nextui-org/theme';
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
         './src/app/**/*.{js,jsx,ts,tsx,mdx}',
         './src/components/**/*.{js,jsx,ts,tsx,mdx}',
-        './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
         extend: {
@@ -51,5 +48,4 @@ module.exports = {
             },
         },
     },
-    plugins: [nextui(), require('@tailwindcss/typography')],
 };

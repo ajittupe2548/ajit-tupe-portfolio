@@ -4,8 +4,6 @@
     "description": "Ajit Tupe's web developer portfolio",
     "main": "index.js",
     "dependencies": {
-        "@nextui-org/theme": "^2.2.9",
-        "@tailwindcss/typography": "^0.5.14",
         "next": "^14.2.6",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
