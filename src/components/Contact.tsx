@@ -36,7 +36,7 @@ const Form = () => {
                 </div>
                 <div className='flex flex-col items-center gap-2'>
                     <button
-                        className='flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold'
+                        className='flex items-center gap-1 hover:scale-110 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold'
                         role='button'
                     >
                         <span>Send Message</span>
@@ -45,8 +45,8 @@ const Form = () => {
                             fill='none'
                             strokeWidth='2'
                             viewBox='0 0 24 24'
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
                             className='mt-1'
                             height='18'
                             width='18'
