@@ -34,7 +34,7 @@ const skills = [
 
 const Technologies: React.FC = () => {
     return (
-        <div className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-3 transition-all duration-300 hover:shadow-xl flex-grow'>
+        <div className='bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-3 transition-all duration-300 hover:shadow-xl flex-grow'>
             <h2 className='text-2xl font-bold mb-6 text-gray-800 dark:text-white text-center'>
                 Skills
             </h2>
@@ -42,7 +42,7 @@ const Technologies: React.FC = () => {
                 {skills.map((skill, index) => (
                     <li
                         key={index}
-                        className='flex flex-col items-center p-4 rounded-lg bg-gray-100 dark:bg-gray-700 transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-600 hover:scale-105 transform'
+                        className='flex flex-col items-center p-4 rounded-lg bg-gray-200 dark:bg-gray-700 transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-600 hover:scale-105 transform'
                     >
                         <div className='text-gray-600 dark:text-gray-300 mb-2'>
                             {React.cloneElement(skill.icon, { size: 24 })}

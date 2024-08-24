@@ -78,7 +78,7 @@ const Form = () => {
                         Your Name:{' '}
                     </label>
                     <input
-                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
+                        className='w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
                         type='text'
                         value={formData.name.value}
                         maxLength={50}
@@ -98,7 +98,7 @@ const Form = () => {
                         Your Email:{' '}
                     </label>
                     <input
-                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
+                        className='w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
                         type='email'
                         id='email'
                         name='email'
@@ -116,7 +116,7 @@ const Form = () => {
                 <div className='flex flex-col gap-2'>
                     <label className='text-base'>Your Message: </label>
                     <textarea
-                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
+                        className='w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
                         maxLength={500}
                         name='message'
                         data-field='message'

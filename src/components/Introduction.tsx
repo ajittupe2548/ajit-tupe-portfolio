@@ -18,7 +18,7 @@ const AboutMe: React.FC = () => {
                             </span>
                             .
                         </h1>
-                        <div className='my-12 flex items-center gap-5'>
+                        <div className='my-12 flex items-center gap-5 justify-center sm:justify-start'>
                             <a
                                 target='_blank'
                                 className='transition-all text-pink-500 hover:scale-125 duration-300'

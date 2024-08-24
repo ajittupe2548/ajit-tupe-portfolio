@@ -4,7 +4,7 @@ import heroImage from '@/assets/Ajit.jpg';
 
 const AboutMe: React.FC = () => {
     return (
-        <div className='bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl md:col-span-3 lg:col-span-4'>
+        <div className='bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl md:col-span-3 lg:col-span-4'>
             <div className='p-6'>
                 <div className='flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6'>
                     <div className='flex-1 text-center sm:text-left'>

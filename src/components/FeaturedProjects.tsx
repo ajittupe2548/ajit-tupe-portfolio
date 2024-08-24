@@ -47,7 +47,7 @@ const projects: Omit<ProjectCardProps, 'stars' | 'forks' | 'lastUpdated'>[] = [
 
 const ProjectsDisplay: React.FC = () => {
     return (
-        <div className='rounded-lg shadow-md md:col-span-2 lg:col-span-3'>
+        <div className='rounded-lg shadow-md md:col-span-2 lg:col-span-3 bg-gray-100 dark:bg-gray-900'>
             <div className='p-4'>
                 <h2 className='text-xl font-bold'>Featured Projects</h2>
             </div>

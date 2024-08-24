@@ -2,10 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Briefcase, FileText, User, Settings } from 'lucide-react';
-import logo from '@/assets/Logo.jpeg';
 
 import ThemeToggle from './ThemeToggle';
 
@@ -21,13 +19,17 @@ const navLinks = [
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const handleMobileNavlinkClick = () => {
+        setIsOpen(false);
+    };
+
     return (
         <header className='sticky top-0 z-50 backdrop-blur-md'>
             <nav className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-between h-16'>
                     <div className='flex items-center'>
                         <Link href='/#home' className='text-2xl font-bold'>
-                            <span className=' text-pink-500'>AJIT TUPE</span>
+                            <span className=' text-pink-500'>Ajit Tupe</span>
                         </Link>
                     </div>
                     <div className='hidden md:block'>
@@ -110,6 +112,7 @@ const Navbar = () => {
                                 key={link.name}
                                 href={link.href}
                                 className='px-3 py-2 rounded-md text-base font-medium flex items-center'
+                                onClick={handleMobileNavlinkClick}
                             >
                                 <link.icon className='w-5 h-5 mr-2' />
                                 {link.name}

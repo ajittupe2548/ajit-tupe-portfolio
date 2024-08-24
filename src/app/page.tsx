@@ -6,7 +6,6 @@ import FeaturedProjects from '@/components/FeaturedProjects';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
 // import Languages from '@/components/Languages';
 // import Hobbies from '@/components/Hobbies';
 
@@ -43,7 +42,7 @@ const HomePage: React.FC = () => {
                 </div>
 
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6  pt-16'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 pt-16'
                     id='projects'
                 >
                     <FeaturedProjects />
@@ -57,14 +56,10 @@ const HomePage: React.FC = () => {
                 </div>
 
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6  pt-16'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 py-16'
                     id='contact'
                 >
                     <Contact />
-                </div>
-
-                <div className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'>
-                    <Footer />
                 </div>
 
                 {/* #TODO: Check if we need this */}
