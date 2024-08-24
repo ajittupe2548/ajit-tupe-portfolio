@@ -26,8 +26,13 @@ const Navbar = () => {
             <nav className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-between h-16'>
                     <div className='flex items-center'>
-                        <Link href='/#home' className='text-2xl font-bold'>
-                            <span className=' text-pink-500'>AJIT TUPE</span>
+                        <Link href='/#home' className='text-3xl font-bold'>
+                            <Image
+                                src={logo}
+                                alt='Logo'
+                                height={36}
+                                width={36}
+                            />
                         </Link>
                     </div>
                     <div className='hidden md:block'>

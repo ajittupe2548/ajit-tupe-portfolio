@@ -7,7 +7,7 @@ const AboutMe: React.FC = () => {
             <div className='p-6'>
                 <div className='flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6'>
                     <div className='flex-1 text-center sm:text-left'>
-                        <h1 className='text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]'>
+                        <h1 className='text-3xl font-bold leading-10 md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]'>
                             Hello, <br />
                             This is{' '}
                             <span className=' text-pink-500'>AJIT TUPE</span>
@@ -48,7 +48,7 @@ const AboutMe: React.FC = () => {
                                 <svg
                                     stroke='currentColor'
                                     fill='currentColor'
-                                    stroke-width='0'
+                                    strokeWidth='0'
                                     viewBox='0 0 512 512'
                                     height='30'
                                     width='30'

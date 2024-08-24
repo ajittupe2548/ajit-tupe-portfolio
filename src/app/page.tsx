@@ -5,53 +5,66 @@ import Technologies from '@/components/Technologies';
 import FeaturedProjects from '@/components/FeaturedProjects';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 // import Languages from '@/components/Languages';
 // import Hobbies from '@/components/Hobbies';
 
 const HomePage: React.FC = () => {
     return (
-        <div className='min-h-screen p-4 md:p-8'>
+        <div className='min-h-screen px-4 md:px-8'>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4'>
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 pt-16'
                     id='home'
                 >
                     <Introduction />
                 </div>
 
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 pt-16'
                     id='about'
                 >
                     <AboutMe />
                 </div>
 
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 grid grid-cols-1 lg:grid-cols-2 gap-4'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 grid grid-cols-1 lg:grid-cols-2 gap-4  pt-16'
                     id='skills'
                 >
                     <Technologies />
                 </div>
 
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 pt-16'
                     id='experience'
                 >
                     <Experience />
                 </div>
 
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6  pt-16'
+                    id='projects'
+                >
+                    <FeaturedProjects />
+                </div>
+
+                <div
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6  pt-16'
                     id='education'
                 >
                     <Education />
                 </div>
 
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'
-                    id='projects'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6  pt-16'
+                    id='contact'
                 >
-                    <FeaturedProjects />
+                    <Contact />
+                </div>
+
+                <div className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'>
+                    <Footer />
                 </div>
 
                 {/* #TODO: Check if we need this */}

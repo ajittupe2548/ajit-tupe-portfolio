@@ -10,36 +10,6 @@ interface TimelineItem {
     skills?: string[];
 }
 
-const educationItems: TimelineItem[] = [
-    {
-        type: 'education',
-        title: 'BE in Mechanical Engineerings',
-        organization: 'A. C. Patil College of Engineering',
-        date: 'May 2017 - May 2021',
-        skills: ['HTML', 'JavaScript', 'CSS', 'MySQL', 'React'],
-    },
-    {
-        type: 'education',
-        title: 'Higher Secondary School',
-        organization: 'Kisan Veer Mahavidyala',
-        date: 'June 2015 - Mar 2017',
-        description: 'Higher secondary schooling with IT subject',
-        skills: ['HTML', 'JavaScript', 'CSS', 'MySQL'],
-    },
-    {
-        type: 'education',
-        title: 'Secondary School',
-        organization: 'Mukaidevi Madhyamik Vidyalaya',
-        date: 'Mar 2012 - Jun 2015',
-    },
-    {
-        type: 'education',
-        title: 'Primary School',
-        organization: 'Z. P. Primary School',
-        date: 'Mar 2004 - Jun 2012',
-    },
-];
-
 const experienceItems: TimelineItem[] = [
     {
         type: 'experience',
@@ -120,14 +90,7 @@ const Timeline: React.FC = () => {
                         <TimelineItem key={index} item={item} />
                     ))}
                 </div>
-                <div>
-                    <h2 className='text-2xl font-bold mb-4 text-gray-900 dark:text-white'>
-                        Education
-                    </h2>
-                    {educationItems.map((item, index) => (
-                        <TimelineItem key={index} item={item} />
-                    ))}
-                </div>
+                <div></div>
             </div>
         </div>
     );
