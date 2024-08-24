@@ -1,43 +1,142 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 
 const Form = () => {
+    const [formData, setFormData] = useState({
+        name: {
+            value: '',
+            error: '',
+        },
+        email: {
+            value: '',
+            error: '',
+        },
+        message: {
+            value: '',
+            error: '',
+        },
+    });
+
+    const handleInputChange = (e) => {
+        const field = e.target.dataset.field;
+        setFormData((prev) => ({
+            ...prev,
+            [field]: {
+                error: prev[field].error,
+                value: e.target.value,
+            },
+        }));
+    };
+
+    const handleInputBlur = (e) => {
+        const field = e.target.dataset.field;
+        const value = e.target.value;
+        let message = '';
+        const regex = {
+            name: /^[A-Za-z\s]+$/,
+            email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+        };
+
+        if (value.length === 0) {
+            message +=
+                field.charAt(0).toUpperCase() +
+                field.slice(1) +
+                ` can't be empty.`;
+        } else if (!regex[field].test(value)) {
+            message = `Please enter valid ${field}.`;
+        }
+
+        setFormData((prev) => ({
+            ...prev,
+            [field]: {
+                value: prev[field].value,
+                error: message,
+            },
+        }));
+    };
+
+    const handleBtnClick = () => {
+        if (
+            formData.name.error ||
+            formData.email.error ||
+            !formData.name.value ||
+            !formData.email.value
+        )
+            return;
+        console.log(
+            `*****Output is :  => handleBtnClick => formData:`,
+            formData
+        );
+    };
+
     return (
         <div className='border p-4 rounded-lg'>
-            <div className='mt-6 flex flex-col gap-4'>
-                <div className='flex flex-col gap-2'>
-                    <label className='text-base'>Your Name: </label>
+            <div className='mt-6 flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 relative'>
+                    <label className='text-base' htmlFor='name'>
+                        Your Name:{' '}
+                    </label>
                     <input
-                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2'
+                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
                         type='text'
-                        maxLength={100}
+                        value={formData.name.value}
+                        maxLength={50}
+                        data-field='name'
+                        id='name'
+                        name='name'
                         required
-                        value=''
+                        onChange={handleInputChange}
+                        onBlur={handleInputBlur}
                     />
+                    <span className='absolute bottom-0 text-sm text-red-500'>
+                        {formData.name.error}
+                    </span>
                 </div>
-                <div className='flex flex-col gap-2'>
-                    <label className='text-base'>Your Email: </label>
+                <div className='flex flex-col gap-2 relative'>
+                    <label className='text-base' htmlFor='email'>
+                        Your Email:{' '}
+                    </label>
                     <input
-                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2'
+                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
                         type='email'
+                        id='email'
+                        name='email'
+                        data-field='email'
                         maxLength={100}
                         required
-                        value=''
+                        value={formData.email.value}
+                        onChange={handleInputChange}
+                        onBlur={handleInputBlur}
                     />
+                    <span className='absolute bottom-0 text-sm text-red-500'>
+                        {formData.email.error}
+                    </span>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <label className='text-base'>Your Message: </label>
                     <textarea
-                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2'
+                        className='bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 mb-6'
                         maxLength={500}
                         name='message'
+                        data-field='message'
                         required
                         rows={4}
+                        value={formData.message.value}
+                        onChange={handleInputChange}
                     ></textarea>
                 </div>
                 <div className='flex flex-col items-center gap-2'>
                     <button
-                        className='flex items-center gap-1 hover:scale-110 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold'
+                        className='flex items-center gap-1 hover:scale-110 disabled:hover:scale-100 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold cursor-pointer disabled:cursor-not-allowed'
                         role='button'
+                        onClick={handleBtnClick}
+                        disabled={
+                            !!formData.name.error ||
+                            !!formData.email.error ||
+                            !formData.name.value ||
+                            !formData.email.value
+                        }
                     >
                         <span>Send Message</span>
                         <svg
