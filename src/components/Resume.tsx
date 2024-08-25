@@ -2,6 +2,7 @@ import React from 'react';
 import resumeData from '../data/resumeDtata.json';
 import heroImage from '@/assets/Ajit.jpg';
 import Image from 'next/image';
+import { FaEnvelope, FaCheck } from 'react-icons/fa';
 
 // Interfaces
 interface PersonalInfo {
@@ -68,15 +69,7 @@ const Header: React.FC<{ personalInfo: PersonalInfo }> = ({ personalInfo }) => (
                     href={`mailto:${personalInfo.email}`}
                     className='flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors'
                 >
-                    <svg
-                        className='w-5 h-5 mr-2'
-                        fill='currentColor'
-                        viewBox='0 0 20 20'
-                        xmlns='http://www.w3.org/2000/svg'
-                    >
-                        <path d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z'></path>
-                        <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z'></path>
-                    </svg>
+                    <FaEnvelope size={20} className='mr-2' />
                     {personalInfo.email}
                 </a>
                 <a
@@ -205,20 +198,7 @@ const Interests: React.FC<{ interests: string[] }> = ({ interests }) => (
         <ul className='grid grid-cols-2 gap-2'>
             {interests.map((interest, index) => (
                 <li key={index} className='flex items-center'>
-                    <svg
-                        className='w-4 h-4 mr-2 text-gray-600'
-                        fill='none'
-                        stroke='currentColor'
-                        viewBox='0 0 24 24'
-                        xmlns='http://www.w3.org/2000/svg'
-                    >
-                        <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth={2}
-                            d='M5 13l4 4L19 7'
-                        />
-                    </svg>
+                    <FaCheck className='mr-2' size={16} />
                     <span>{interest}</span>
                 </li>
             ))}
