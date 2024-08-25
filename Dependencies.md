@@ -42,6 +42,12 @@ A high-performance image processing library for resizing, converting, and manipu
 
 -   Features: Supports multiple image formats (JPEG, PNG, WebP, etc.), enables fast image resizing and optimization, reduces file sizes for web use, performs image transformations like cropping and rotation, works efficiently in Node.js environments.
 
+### react-icons
+
+A library that provides popular icons as React components.
+
+-   Features: Includes icons from various icon sets (FontAwesome, Material Design, etc.), easy to use and customize with props, lightweight and optimized for performance, integrates seamlessly into React applications.
+
 ## devDependencies
 
 ### @types/node
