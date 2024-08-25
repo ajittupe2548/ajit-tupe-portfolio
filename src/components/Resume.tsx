@@ -231,7 +231,7 @@ const Resume: React.FC = () => {
     return (
         <div
             id='resume'
-            className='mx-auto my-10 p-2 text-black dark:text-white bg-white dark:bg-gray-900 print:bg-white print:text-black'
+            className='mx-auto mb-10 p-2 text-black dark:text-white bg-white dark:bg-gray-900 print:bg-white print:text-black'
         >
             <Header personalInfo={resumeData.personalInfo} />
 

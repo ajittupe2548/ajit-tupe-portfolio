@@ -124,10 +124,5 @@
             "liveLink": ""
         }
     ],
-    "interests": [
-        "Web Development",
-        "Open Source Contributions",
-        "Continuous Learning",
-        "Sports"
-    ]
+    "interests": ["Web Development", "Continuous Learning", "Sports"]
 }
