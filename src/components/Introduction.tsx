@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaFacebook, FaXTwitter } from 'react-icons/fa6';
+import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const AboutMe: React.FC = () => {
     return (

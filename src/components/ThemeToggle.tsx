@@ -1,6 +1,6 @@
 'use client';
 
-import { Moon, Sun } from 'lucide-react';
+import { FaMoon, FaSun } from 'react-icons/fa';
 import { useTheme } from 'next-themes';
 
 export default function ThemeToggle() {
@@ -8,11 +8,11 @@ export default function ThemeToggle() {
 
     return (
         <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-            <Sun
+            <FaSun
                 size={24}
                 className='absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100'
             />
-            <Moon
+            <FaMoon
                 size={24}
                 className='rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0'
             />

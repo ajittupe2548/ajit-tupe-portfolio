@@ -3,17 +3,24 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Briefcase, FileText, User, Settings } from 'lucide-react';
+import {
+    FaRegUser,
+    FaLayerGroup,
+    FaPhoneAlt,
+    FaBriefcase,
+    FaFileAlt,
+    FaTools,
+} from 'react-icons/fa';
 
 import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
-    { name: 'About', href: '/#about', icon: User },
-    { name: 'Skills', href: '/#skills', icon: Settings },
-    { name: 'Experience', href: '/#experience', icon: Settings },
-    { name: 'Projects', href: '/#projects', icon: Briefcase },
-    { name: 'Contact', href: '/#contact', icon: Briefcase },
-    { name: 'Resume', href: '/resume', icon: FileText },
+    { name: 'About', href: '/#about', icon: FaRegUser },
+    { name: 'Skills', href: '/#skills', icon: FaTools },
+    { name: 'Experience', href: '/#experience', icon: FaBriefcase },
+    { name: 'Projects', href: '/#projects', icon: FaLayerGroup },
+    { name: 'Contact', href: '/#contact', icon: FaPhoneAlt },
+    { name: 'Resume', href: '/resume', icon: FaFileAlt },
 ];
 
 const Navbar = () => {

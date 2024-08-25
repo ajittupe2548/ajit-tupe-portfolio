@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, ExternalLink, Star, GitFork, Clock } from 'lucide-react';
+import { FaGithub, FaExternalLinkAlt, FaRegStar } from 'react-icons/fa';
+import { FaCodeFork } from 'react-icons/fa6';
 
 interface ProjectCardProps {
     title: string;
@@ -56,11 +57,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     <div className='flex justify-between items-center text-sm text-gray-600 dark:text-gray-400'>
                         <div className='flex items-center space-x-4'>
                             <span className='flex items-center'>
-                                <Star size={16} className='mr-1' />
+                                <FaRegStar size={16} className='mr-1' />
                                 {stars}
                             </span>
                             <span className='flex items-center'>
-                                <GitFork size={16} className='mr-1' />
+                                <FaCodeFork size={16} className='mr-1' />
                                 {forks}
                             </span>
                         </div>
@@ -72,7 +73,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             rel='noopener noreferrer'
                             className='flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300'
                         >
-                            <Github className='mr-1' size={16} />
+                            <FaGithub className='mr-1' size={16} />
                             <span className='text-sm'>GitHub</span>
                         </a>
                         {liveLink && (
@@ -82,7 +83,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                                 rel='noopener noreferrer'
                                 className='flex items-center text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-300 transition-colors duration-300'
                             >
-                                <ExternalLink className='mr-1' size={16} />
+                                <FaExternalLinkAlt className='mr-1' size={16} />
                                 <span className='text-sm'>Live Demo</span>
                             </a>
                         )}

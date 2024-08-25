@@ -1,35 +1,34 @@
 import React from 'react';
 import {
-    Code,
-    FileJson,
-    Atom,
-    Zap,
-    Palette,
-    Server,
-    Database,
-    Table,
-    Github,
-    GitCommit,
-    Terminal,
-    Bot,
-    Code2,
-} from 'lucide-react';
+    FaHtml5,
+    FaCss3,
+    FaJs,
+    FaReact,
+    FaNodeJs,
+    FaGit,
+    FaGithub,
+} from 'react-icons/fa';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import { RiNextjsFill } from 'react-icons/ri';
+import { SiTypescript } from 'react-icons/si';
+import { BiLogoMongodb } from 'react-icons/bi';
+import { DiMysql } from 'react-icons/di';
+import { VscVscode } from 'react-icons/vsc';
 
 const skills = [
-    { icon: <Code2 />, name: 'HTML' },
-    { icon: <Code2 />, name: 'CSS' },
-    { icon: <Code />, name: 'JavaScript' },
-    { icon: <FileJson />, name: 'TypeScript' },
-    { icon: <Atom />, name: 'React' },
-    { icon: <Zap />, name: 'Next.js' },
-    { icon: <Palette />, name: 'Tailwind CSS' },
-    { icon: <Server />, name: 'Node.js' },
-    { icon: <Database />, name: 'MongoDB' },
-    { icon: <Table />, name: 'MySQL' },
-    { icon: <GitCommit />, name: 'Git' },
-    { icon: <Github />, name: 'GitHub' },
-    { icon: <Terminal />, name: 'VS Code' },
-    { icon: <Bot />, name: 'OpenAI' },
+    { icon: <FaHtml5 />, name: 'HTML' },
+    { icon: <FaCss3 />, name: 'CSS' },
+    { icon: <FaJs />, name: 'JavaScript' },
+    { icon: <SiTypescript />, name: 'TypeScript' },
+    { icon: <FaReact />, name: 'React' },
+    { icon: <RiNextjsFill />, name: 'Next.js' },
+    { icon: <RiTailwindCssFill />, name: 'Tailwind CSS' },
+    { icon: <FaNodeJs />, name: 'Node.js' },
+    { icon: <BiLogoMongodb />, name: 'MongoDB' },
+    { icon: <DiMysql />, name: 'MySQL' },
+    { icon: <FaGit />, name: 'Git' },
+    { icon: <FaGithub />, name: 'GitHub' },
+    { icon: <VscVscode />, name: 'VS Code' },
 ];
 
 const Technologies: React.FC = () => {
