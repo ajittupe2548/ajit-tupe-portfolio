@@ -35,7 +35,7 @@ const LanguageCard: React.FC<LanguageCardProps> = ({ language, index }) => (
 const Languages: React.FC = () => {
     return (
         <div className='mb-16'>
-            <h2 className='text-3xl font-bold text-gray-800 dark:text-white mb-6 animate-fade-in-down'>
+            <h2 className='text-3xl font-bold text-gray-800 dark:text-white mb-6'>
                 Languages
             </h2>
             <div className='grid grid-cols-1  gap-2'>

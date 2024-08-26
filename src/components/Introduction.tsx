@@ -10,7 +10,7 @@ const AboutMe: React.FC = () => {
                 <div className='flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6'>
                     <div className='flex-1 text-left'>
                         <div className='text-4xl font-bold'>
-                            <span className=''>Hey there!, I'm</span>
+                            Hey there!, I'm
                             <br />
                             <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left text-pink-500'>
                                 Ajit Tupe.

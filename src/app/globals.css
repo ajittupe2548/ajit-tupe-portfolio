@@ -57,28 +57,3 @@
         @apply bg-background text-foreground;
     }
 }
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-fade-in-down {
-    animation: fadeInDown 0.5s ease-out;
-}
-
-.print-light-mode {
-    background-color: white !important;
-    color: black !important;
-}
-
-.print-light-mode * {
-    color: black !important;
-    background-color: transparent !important;
-}
