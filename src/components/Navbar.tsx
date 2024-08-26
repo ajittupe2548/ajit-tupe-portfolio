@@ -65,6 +65,9 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='flex -mr-2 md:hidden'>
+                        <div className='flex items-center px-5'>
+                            <ThemeToggle />
+                        </div>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className='inline-flex items-center justify-center p-2 rounded-md focus:outline-none'
@@ -99,11 +102,6 @@ const Navbar = () => {
                                 {link.name}
                             </Link>
                         ))}
-                    </div>
-                    <div className='pt-4 pb-3 border-t border-gray-200'>
-                        <div className='flex items-center px-5'>
-                            <ThemeToggle />
-                        </div>
                     </div>
                 </motion.div>
             )}
