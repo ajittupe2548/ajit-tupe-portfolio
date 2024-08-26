@@ -1,3 +1,10 @@
+To add resume page
+
+Create resume folder inside app folder.
+
+Create page.tsx file in resume folder and paste below code in page.tsx
+
+```
 import React from 'react';
 import Link from 'next/link';
 import Resume from '@/components/Resume';
@@ -21,3 +28,4 @@ export default function ResumePage() {
         </div>
     );
 }
+```

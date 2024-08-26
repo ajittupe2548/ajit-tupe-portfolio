@@ -22,7 +22,7 @@ const navLinks = [
     { name: 'Experience', href: '/#experience', icon: FaBriefcase },
     { name: 'Projects', href: '/#projects', icon: FaLayerGroup },
     { name: 'Contact', href: '/#contact', icon: FaPhoneAlt },
-    { name: 'Resume', href: '/resume', icon: FaFileAlt },
+    // { name: 'Resume', href: '/resume', icon: FaFileAlt },
 ];
 
 const Navbar = () => {
