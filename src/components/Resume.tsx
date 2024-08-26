@@ -3,6 +3,7 @@ import resumeData from '../data/resumeDtata.json';
 import heroImage from '@/assets/Ajit.jpg';
 import Image from 'next/image';
 import { FaEnvelope, FaCheck } from 'react-icons/fa';
+import Link from 'next/link';
 
 // Interfaces
 interface PersonalInfo {
@@ -65,25 +66,25 @@ const Header: React.FC<{ personalInfo: PersonalInfo }> = ({ personalInfo }) => (
                 {personalInfo.title}
             </h2>
             <div className='flex flex-wrap justify-center md:justify-start gap-4 mb-4'>
-                <a
+                <Link
                     href={`mailto:${personalInfo.email}`}
                     className='flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors'
                 >
                     <FaEnvelope size={20} className='mr-2' />
                     {personalInfo.email}
-                </a>
-                <a
+                </Link>
+                <Link
                     href={personalInfo.linkedin}
                     className='flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors'
                 >
                     {personalInfo.linkedin}
-                </a>
-                <a
+                </Link>
+                <Link
                     href={personalInfo.github}
                     className='flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors'
                 >
                     {personalInfo.github}
-                </a>
+                </Link>
             </div>
         </div>
     </header>

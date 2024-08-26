@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt, FaRegStar } from 'react-icons/fa';
 import { FaCodeFork } from 'react-icons/fa6';
@@ -67,7 +68,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         </div>
                     </div>
                     <div className='flex justify-between'>
-                        <a
+                        <Link
                             href={githubLink}
                             target='_blank'
                             rel='noopener noreferrer'
@@ -75,9 +76,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         >
                             <FaGithub className='mr-1' size={16} />
                             <span className='text-sm'>GitHub</span>
-                        </a>
+                        </Link>
                         {liveLink && (
-                            <a
+                            <Link
                                 href={liveLink}
                                 target='_blank'
                                 rel='noopener noreferrer'
@@ -85,7 +86,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             >
                                 <FaExternalLinkAlt className='mr-1' size={16} />
                                 <span className='text-sm'>Live Demo</span>
-                            </a>
+                            </Link>
                         )}
                     </div>
                 </div>
