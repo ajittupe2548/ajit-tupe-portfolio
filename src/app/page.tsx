@@ -13,10 +13,7 @@ const HomePage: React.FC = () => {
     return (
         <div className='min-h-screen px-4 md:px-8'>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4'>
-                <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 pt-16'
-                    id='home'
-                >
+                <div className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 pt-6'>
                     <Introduction />
                 </div>
 
