@@ -11,6 +11,7 @@ import {
 import { FaLocationDot, FaXTwitter } from 'react-icons/fa6';
 import { TbMailForward } from 'react-icons/tb';
 import Link from 'next/link';
+import SocialLinks from './SocialLinks';
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -186,36 +187,7 @@ const Details = () => {
                     </Link>
                 </div>
                 <div className='mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10 justify-center lg:justify-normal'>
-                    <a target='_blank' href='https://github.com/ajittupe2548'>
-                        <FaGithub
-                            size={30}
-                            className='text-pink-500 hover:text-pink-300  transition-all duration-300 cursor-pointer'
-                        />
-                    </a>
-                    <a
-                        target='_blank'
-                        href='https://www.linkedin.com/in/ajittupe2548/'
-                    >
-                        <FaLinkedin
-                            size={30}
-                            className='text-pink-500 hover:text-pink-300  transition-all duration-300 cursor-pointer'
-                        />
-                    </a>
-                    <a target='_blank' href='https://x.com/ajittupe2548'>
-                        <FaXTwitter
-                            size={30}
-                            className='text-pink-500 hover:text-pink-300  transition-all duration-300 cursor-pointer'
-                        />
-                    </a>
-                    <a
-                        target='_blank'
-                        href='https://www.facebook.com/ajittupe2548/'
-                    >
-                        <FaFacebook
-                            size={30}
-                            className='text-pink-500 hover:text-pink-300  transition-all duration-300 cursor-pointer'
-                        />
-                    </a>
+                    <SocialLinks className='' />
                 </div>
             </div>
         </>

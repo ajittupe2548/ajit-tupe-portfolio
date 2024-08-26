@@ -1,13 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import {
-    FaLinkedin,
-    FaGithub,
-    FaFacebook,
-    FaDownload,
-    FaPhoneAlt,
-} from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaDownload, FaPhoneAlt } from 'react-icons/fa';
+import SocialLinks from './SocialLinks';
 
 const AboutMe: React.FC = () => {
     return (
@@ -43,36 +37,7 @@ const AboutMe: React.FC = () => {
                                 </Link>
                             </p>
                         </div>
-                        <div className='my-12 flex items-center gap-5 justify-center sm:justify-start'>
-                            <a
-                                target='_blank'
-                                className='transition-all text-pink-500 hover:text-pink-200 duration-300'
-                                href='https://github.com/ajittupe2548'
-                            >
-                                <FaGithub size={30} />
-                            </a>
-                            <a
-                                target='_blank'
-                                className='transition-all text-pink-500 hover:text-pink-200 duration-300'
-                                href='https://www.linkedin.com/in/ajittupe2548/'
-                            >
-                                <FaLinkedin size={30} />
-                            </a>
-                            <a
-                                target='_blank'
-                                className='transition-all text-pink-500 hover:text-pink-200 duration-300'
-                                href='https://www.facebook.com/ajittupe2548/'
-                            >
-                                <FaFacebook size={30} />
-                            </a>
-                            <a
-                                target='_blank'
-                                className='transition-all text-pink-500 hover:text-pink-200 duration-300'
-                                href='https://x.com/ajittupe2548'
-                            >
-                                <FaXTwitter size={30} />
-                            </a>
-                        </div>
+                        <SocialLinks className='my-12' />
                         <div className='flex items-center gap-3'>
                             <Link
                                 className='bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-1000'
