@@ -177,8 +177,8 @@ const Details = () => {
                 <div className='mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10 justify-center lg:justify-normal'>
                     <a target='_blank' href='https://github.com/ajittupe2548'>
                         <FaGithub
-                            size={48}
-                            className='bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer'
+                            size={30}
+                            className='text-pink-500 hover:text-pink-300  transition-all duration-300 cursor-pointer'
                         />
                     </a>
                     <a
@@ -186,14 +186,14 @@ const Details = () => {
                         href='https://www.linkedin.com/in/ajittupe2548/'
                     >
                         <FaLinkedin
-                            size={48}
-                            className='bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer'
+                            size={30}
+                            className='text-pink-500 hover:text-pink-300  transition-all duration-300 cursor-pointer'
                         />
                     </a>
                     <a target='_blank' href='https://x.com/ajittupe2548'>
                         <FaXTwitter
-                            size={48}
-                            className='bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer'
+                            size={30}
+                            className='text-pink-500 hover:text-pink-300  transition-all duration-300 cursor-pointer'
                         />
                     </a>
                     <a
@@ -201,8 +201,8 @@ const Details = () => {
                         href='https://www.facebook.com/ajittupe2548/'
                     >
                         <FaFacebook
-                            size={48}
-                            className='bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer'
+                            size={30}
+                            className='text-pink-500 hover:text-pink-300  transition-all duration-300 cursor-pointer'
                         />
                     </a>
                 </div>

@@ -40,28 +40,28 @@ const AboutMe: React.FC = () => {
                         <div className='my-12 flex items-center gap-5 justify-center sm:justify-start'>
                             <a
                                 target='_blank'
-                                className='transition-all text-pink-500 hover:scale-125 duration-300'
+                                className='transition-all text-pink-500 hover:text-pink-200 duration-300'
                                 href='https://github.com/ajittupe2548'
                             >
                                 <FaGithub size={30} />
                             </a>
                             <a
                                 target='_blank'
-                                className='transition-all text-pink-500 hover:scale-125 duration-300'
+                                className='transition-all text-pink-500 hover:text-pink-200 duration-300'
                                 href='https://www.linkedin.com/in/ajittupe2548/'
                             >
                                 <FaLinkedin size={30} />
                             </a>
                             <a
                                 target='_blank'
-                                className='transition-all text-pink-500 hover:scale-125 duration-300'
+                                className='transition-all text-pink-500 hover:text-pink-200 duration-300'
                                 href='https://www.facebook.com/ajittupe2548/'
                             >
                                 <FaFacebook size={30} />
                             </a>
                             <a
                                 target='_blank'
-                                className='transition-all text-pink-500 hover:scale-125 duration-300'
+                                className='transition-all text-pink-500 hover:text-pink-200 duration-300'
                                 href='https://x.com/ajittupe2548'
                             >
                                 <FaXTwitter size={30} />

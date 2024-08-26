@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     };
 
     return (
-        <div className='group relative overflow-hidden rounded-xl p-1 transition-all duration-500 hover:scale-[1.02] hover:shadow-xl flex-grow'>
+        <div className='group relative overflow-hidden rounded-xl p-1 transition-all duration-500 hover:shadow-xl flex-grow'>
             <div className='absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-75 transition-all duration-500 group-hover:opacity-100'></div>
             <div className='relative h-full rounded-lg bg-white p-6 dark:bg-gray-800 transition-all duration-500 dark:bg-opacity-80 backdrop-blur-sm flex flex-col'>
                 <h3 className='mb-3 text-2xl font-bold text-gray-800 dark:text-white'>
