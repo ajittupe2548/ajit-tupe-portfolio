@@ -10,16 +10,16 @@ const AboutMe: React.FC = () => {
                 <div className='flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6'>
                     <div className='flex-1 text-left'>
                         <div className='text-4xl font-bold'>
-                            <span className='text-[#16f2b3]'>
-                                Hey there!, I'm-
-                            </span>
+                            <span className=''>Hey there!, I'm-</span>
                             <br />
-                            <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left'>
+                            <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left text-pink-500'>
                                 Ajit Tupe.
                             </h1>
                             <br />
                             <p className='text-xl sm:text-3xl'>
-                                Software Engineer.
+                                <span className='text-emerald-400'>
+                                    Software Engineer.
+                                </span>
                                 <span className='text-gray-500 ml-2'>
                                     A self-taught developer with an <br />{' '}
                                     interest in Computer Science.
@@ -31,7 +31,7 @@ const AboutMe: React.FC = () => {
                                 <Link
                                     href='https://www.carwale.com/'
                                     target='_blank'
-                                    className='text-[#16f2b3]'
+                                    className='text-emerald-400'
                                 >
                                     Carwale
                                 </Link>
