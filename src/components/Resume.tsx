@@ -167,14 +167,14 @@ const Projects: React.FC<{ projects: Project[] }> = ({ projects }) => (
         {projects.map((project, index) => (
             <div key={index} className='mb-6'>
                 <h3 className='text-xl font-semibold'>
-                    <a
+                    <Link
                         href={project.link}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='text-blue-600 hover:underline'
                     >
                         {project.name}
-                    </a>
+                    </Link>
                 </h3>
                 <p className='mb-2'>{project.description}</p>
                 <div className='flex flex-wrap gap-2 mt-2'>
