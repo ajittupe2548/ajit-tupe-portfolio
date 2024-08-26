@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 import { FaLocationDot, FaXTwitter } from 'react-icons/fa6';
 import { TbMailForward } from 'react-icons/tb';
+import Link from 'next/link';
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -137,7 +138,7 @@ const Form = () => {
                 </div>
                 <div className='flex flex-col items-center gap-2'>
                     <button
-                        className='flex items-center gap-1 hover:scale-110 disabled:hover:scale-100 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold cursor-pointer disabled:cursor-not-allowed'
+                        className='flex items-center gap-1 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold cursor-pointer disabled:cursor-not-allowed'
                         role='button'
                         onClick={handleBtnClick}
                         disabled={
@@ -161,18 +162,28 @@ const Details = () => {
         <>
             <div className='lg:w-3/4 '>
                 <div className='flex flex-col gap-5 lg:gap-9'>
-                    <p className='text-sm md:text-xl flex items-center gap-3'>
-                        <FaEnvelope className='cursor-pointer' />
+                    <Link
+                        href='mailto:ajittupe2548@gmail.com'
+                        className='text-sm md:text-xl flex items-center gap-2 md:gap-3'
+                    >
+                        <FaEnvelope className='w-3 sm:w-4' />
                         <span>ajittupe2548@gmail.com</span>
-                    </p>
-                    <p className='text-sm md:text-xl flex items-center gap-3'>
-                        <FaPhoneAlt className='cursor-pointer' />
+                    </Link>
+                    <Link
+                        href='tel:+919869629631'
+                        className='text-sm md:text-xl flex items-center gap-2 md:gap-3'
+                    >
+                        <FaPhoneAlt className='w-3 sm:w-4' />
                         <span>+91 9869629631</span>
-                    </p>
-                    <p className='text-sm md:text-xl flex items-center gap-3'>
-                        <FaLocationDot className='cursor-pointer' />
+                    </Link>
+                    <Link
+                        href='https://maps.app.goo.gl/fYiGN6BEC4TMcTYn6'
+                        target='_blank'
+                        className='text-sm md:text-xl flex items-center gap-2 md:gap-3'
+                    >
+                        <FaLocationDot className='w-3 sm:w-4' />
                         <span>Navi Mumbai, Maharashtra, India</span>
-                    </p>
+                    </Link>
                 </div>
                 <div className='mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10 justify-center lg:justify-normal'>
                     <a target='_blank' href='https://github.com/ajittupe2548'>
