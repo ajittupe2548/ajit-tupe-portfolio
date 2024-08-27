@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import heroImage from '@/assets/Ajit.jpg';
 
-const AboutMe: React.FC = () => {
+const About: React.FC = () => {
     return (
         <div className='bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl md:col-span-3 lg:col-span-4'>
             <div className='p-6'>
@@ -38,4 +38,4 @@ const AboutMe: React.FC = () => {
     );
 };
 
-export default AboutMe;
+export default About;

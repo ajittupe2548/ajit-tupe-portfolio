@@ -1,6 +1,6 @@
 import React from 'react';
 import Introduction from '@/components/Introduction';
-import AboutMe from '@/components/AboutMe';
+import About from '@/components/About';
 import Technologies from '@/components/Technologies';
 import FeaturedProjects from '@/components/Projects';
 import Experience from '@/components/Experience';
@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
                     className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 pt-16'
                     id='about'
                 >
-                    <AboutMe />
+                    <About />
                 </div>
 
                 <div
