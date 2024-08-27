@@ -3,7 +3,7 @@ import React from 'react';
 import { FaDownload, FaPhoneAlt } from 'react-icons/fa';
 import SocialLinks from './SocialLinks';
 
-const AboutMe: React.FC = () => {
+const Introduction: React.FC = () => {
     return (
         <div className='rounded-xl overflow-hidden transition-all duration-300 md:col-span-3 lg:col-span-4'>
             <div className='p-6'>
@@ -65,4 +65,4 @@ const AboutMe: React.FC = () => {
     );
 };
 
-export default AboutMe;
+export default Introduction;
