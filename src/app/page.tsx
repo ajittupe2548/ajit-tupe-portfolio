@@ -2,7 +2,7 @@ import React from 'react';
 import Introduction from '@/components/Introduction';
 import AboutMe from '@/components/AboutMe';
 import Technologies from '@/components/Technologies';
-import FeaturedProjects from '@/components/FeaturedProjects';
+import FeaturedProjects from '@/components/Projects';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import Contact from '@/components/Contact';
