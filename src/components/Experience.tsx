@@ -3,14 +3,7 @@
 import React from 'react';
 import studyIcon from '../data/work.json';
 import AnimationLottie from './LottieAnimation';
-
-interface TimelineItem {
-    title: string;
-    organization: string;
-    date: string;
-    location?: string;
-    description?: string;
-}
+import TimelineItem from './TimelineItem';
 
 const experienceItems: TimelineItem[] = [
     {
@@ -39,41 +32,14 @@ const experienceItems: TimelineItem[] = [
     },
 ];
 
-const TimelineItem: React.FC<{ item: TimelineItem }> = ({ item }) => (
-    <div className='mb-8 relative'>
-        <div className='p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md'>
-            <h3 className='text-lg font-medium text-gray-900 dark:text-white'>
-                {item.title}
-            </h3>
-            <p className='text-sm text-gray-600 dark:text-gray-400'>
-                {item.organization}
-            </p>
-            <div className='flex justify-between text-sm text-gray-500 dark:text-gray-500'>
-                {item.date}
-                {item.location && (
-                    <p className='text-sm text-gray-500 dark:text-gray-500'>
-                        {item.location}
-                    </p>
-                )}
-            </div>
-
-            {item.description && (
-                <p className='mt-2 text-sm text-gray-700 dark:text-gray-300'>
-                    {item.description}
-                </p>
-            )}
-        </div>
-    </div>
-);
-
 const Timeline: React.FC = () => {
     return (
-        <div className='max-w-6xl mx-auto p-4 rounded-lg pt-16' id='experience'>
+        <div className='pt-16' id='experience'>
+            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
+                Experience
+            </h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-                <div>
-                    <h2 className='text-2xl font-bold mb-4 text-gray-900 dark:text-white'>
-                        Experience
-                    </h2>
+                <div className='flex flex-col gap-6'>
                     {experienceItems.map((item, index) => (
                         <TimelineItem key={index} item={item} />
                     ))}
