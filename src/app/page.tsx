@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
                 </div>
 
                 <div
-                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 py-16'
+                    className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 py-8'
                     id='contact'
                 >
                     <Contact />
