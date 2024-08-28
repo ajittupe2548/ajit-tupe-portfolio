@@ -4,7 +4,7 @@ import heroImage from '@/assets/Ajit.jpg';
 
 const About: React.FC = () => {
     return (
-        <div className='pb-6 pt-16' id='about'>
+        <div className='pt-16' id='about'>
             <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
                 Overview
             </h2>
