@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className='flex items-center justify-between h-16'>
                     <div className='flex items-center'>
                         <Link href='/' className='text-2xl font-bold'>
-                            <span className=' text-emerald-400'>Ajit Tupe</span>
+                            <span className=' text-emerald-400'>AT</span>
                         </Link>
                     </div>
                     <div className='hidden md:block'>
