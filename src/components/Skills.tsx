@@ -33,25 +33,20 @@ const skills = [
 
 const Skills: React.FC = () => {
     return (
-        <div
-            className='p-6 rounded-xl md:col-span-2 transition-all duration-300 flex-grow pt-16'
-            id='skills'
-        >
-            <h2 className='text-2xl font-bold mb-6 text-gray-800 dark:text-white text-center'>
+        <div className='pt-16' id='skills'>
+            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
                 Skills
             </h2>
             <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
                 {skills.map((skill, index) => (
                     <li
                         key={index}
-                        className='flex flex-col items-center p-4 rounded-lg bg-gray-200 dark:bg-gray-700 transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-600 hover:scale-105 transform'
+                        className='flex flex-col items-center p-4 rounded-lg bg-gray-200 dark:bg-gray-700 transition-all duration-300 hover:scale-105'
                     >
-                        <div className='text-gray-600 dark:text-gray-300 mb-2'>
+                        <div className='mb-2'>
                             {React.cloneElement(skill.icon, { size: 24 })}
                         </div>
-                        <span className='text-sm font-medium text-gray-700 dark:text-gray-300 text-center'>
-                            {skill.name}
-                        </span>
+                        <span className='text-sm'>{skill.name}</span>
                     </li>
                 ))}
             </ul>
