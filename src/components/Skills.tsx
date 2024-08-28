@@ -33,7 +33,10 @@ const skills = [
 
 const Skills: React.FC = () => {
     return (
-        <div className='p-6 rounded-xl md:col-span-2 transition-all duration-300 flex-grow'>
+        <div
+            className='p-6 rounded-xl md:col-span-2 transition-all duration-300 flex-grow pt-16'
+            id='skills'
+        >
             <h2 className='text-2xl font-bold mb-6 text-gray-800 dark:text-white text-center'>
                 Skills
             </h2>

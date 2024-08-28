@@ -4,7 +4,10 @@ import heroImage from '@/assets/Ajit.jpg';
 
 const About: React.FC = () => {
     return (
-        <div className='rounded-xl overflow-hidden transition-all duration-300 md:col-span-3 lg:col-span-4 p-6'>
+        <div
+            className='rounded-xl overflow-hidden transition-all duration-300 md:col-span-3 lg:col-span-4 p-6 pt-16'
+            id='about'
+        >
             <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-1'>
                 Overview
             </h2>
