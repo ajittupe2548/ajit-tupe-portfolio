@@ -40,7 +40,7 @@ const Timeline: React.FC = () => {
             </h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                 <div className='flex'>
-                    <AnimationLottie animationPath={studyIcon} />
+                    <AnimationLottie animationPath={studyIcon} className='' />
                 </div>
                 <div className='flex flex-col gap-6'>
                     {experienceItems.map((item, index) => (
