@@ -33,7 +33,7 @@ const skills = [
 
 const Technologies: React.FC = () => {
     return (
-        <div className='bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-3 transition-all duration-300 hover:shadow-xl flex-grow'>
+        <div className='p-6 rounded-xl md:col-span-2 transition-all duration-300 flex-grow'>
             <h2 className='text-2xl font-bold mb-6 text-gray-800 dark:text-white text-center'>
                 Skills
             </h2>
