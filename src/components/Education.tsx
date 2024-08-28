@@ -39,7 +39,7 @@ const Timeline: React.FC = () => {
                 <div className='flex justify-center'>
                     <AnimationLottie
                         animationPath={study}
-                        className='w-full sm:w-11/12'
+                        className='w-full sm:w-2/3'
                     />
                 </div>
             </div>

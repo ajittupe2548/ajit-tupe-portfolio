@@ -8,8 +8,8 @@ import SocialLinks from './SocialLinks';
 
 const ProjectsDisplay: React.FC = () => {
     return (
-        <div className='max-w-6xl mx-auto p-4 rounded-lg py-8' id='contact'>
-            <h2 className='text-4xl font-bold mb-4 text-gray-900 dark:text-white text-center'>
+        <div className='pt-16' id='contact'>
+            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
                 Get in touch
             </h2>
             <div className='flex flex-col items-center my-4 text-sm'>
@@ -44,7 +44,7 @@ const ProjectsDisplay: React.FC = () => {
                     <span>Navi Mumbai, Maharashtra, India</span>
                 </Link>
             </div>
-            <div className='mt-8 flex items-center gap-5 justify-center'>
+            <div className='my-8 flex items-center gap-5 justify-center'>
                 <SocialLinks className='' />
             </div>
         </div>
