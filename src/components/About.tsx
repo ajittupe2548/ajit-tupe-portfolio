@@ -11,14 +11,22 @@ const About: React.FC = () => {
             <div className='flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6'>
                 <div className='flex-1 text-center sm:text-left'>
                     <p className='text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
-                        I'm Mumbai Based Frontend Developer with experience in
-                        React JS, JavaScript , TypeScript , React native , HTML
-                        , CSS add SCSS. Currently I work at CarWale, where I
-                        have been gaining valuable experience in front-end
-                        development. I am always eager to learn and stay updated
-                        with the latest industry trends and technologies,
-                        continuously enhancing my skills and knowledge to
-                        contribute effectively to my team and projects.
+                        <p>
+                            Greetings! I'm Ajit Tupe, a dedicated software
+                            engineer located in Navi Mumbai, India. My expertise
+                            spans HTML, CSS, JavaScript, TypeScript, React.js,
+                            and React Native, encompassing frontend development.
+                        </p>
+                        <p className='mt-4'>
+                            Currently I'm a UI Developer @ CarWale where I have
+                            been gaining valuable experience in front-end
+                            development.
+                        </p>
+                        <p className='mt-4'>
+                            I am always eager to learn and stay updated with the
+                            latest industry trends and technologies,
+                            continuously enhancing my skills and knowledge.
+                        </p>
                     </p>
                 </div>
                 <Image
