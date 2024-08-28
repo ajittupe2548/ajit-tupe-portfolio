@@ -21,7 +21,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             <body className={inter.className}>
                 <ThemeProvider attribute='class'>
                     <Navbar />
-                    <main className='px-3 md:px-12 max-w-7xl mx-auto overflow-hidden'>
+                    <main className='px-3 md:px-20 max-w-7xl mx-auto overflow-hidden'>
                         {children}
                     </main>
                     <Footer />

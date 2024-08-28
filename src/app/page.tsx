@@ -12,10 +12,7 @@ import Contact from '@/components/Contact';
 const HomePage: React.FC = () => {
     return (
         <>
-            <div className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6'>
-                <Introduction />
-            </div>
-
+            <Introduction />
             <div
                 className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 pt-16'
                 id='about'
