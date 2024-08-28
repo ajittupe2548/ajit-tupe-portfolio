@@ -10,7 +10,7 @@ const About: React.FC = () => {
             </h2>
             <div className='flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6'>
                 <div className='flex-1 text-center sm:text-left'>
-                    <p className='text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
+                    <div className='text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
                         <p>
                             Greetings! I'm Ajit Tupe, a dedicated software
                             engineer located in Navi Mumbai, India. My expertise
@@ -27,7 +27,7 @@ const About: React.FC = () => {
                             latest industry trends and technologies,
                             continuously enhancing my skills and knowledge.
                         </p>
-                    </p>
+                    </div>
                 </div>
                 <Image
                     src={heroImage}

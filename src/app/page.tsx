@@ -1,7 +1,7 @@
 import React from 'react';
 import Introduction from '@/components/Introduction';
 import About from '@/components/About';
-import Technologies from '@/components/Technologies';
+import Skills from '@/components/Skills';
 import FeaturedProjects from '@/components/Projects';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
                     className='sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-6 grid grid-cols-1 lg:grid-cols-2 gap-4  pt-16'
                     id='skills'
                 >
-                    <Technologies />
+                    <Skills />
                 </div>
 
                 <div
