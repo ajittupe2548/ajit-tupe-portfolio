@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const SOCIAL_LINKS = [
@@ -12,8 +12,13 @@ const SOCIAL_LINKS = [
     },
     {
         name: 'Facebook',
-        href: 'https://www.facebook.com/ajittupe2548/',
+        href: 'https://www.facebook.com/ajit.tupe.547/',
         icon: FaFacebook,
+    },
+    {
+        name: 'Instagram',
+        href: 'https://www.instagram.com/ajittupe2548/',
+        icon: FaInstagram,
     },
     { name: 'Twitter', href: 'https://x.com/ajittupe2548', icon: FaXTwitter },
 ];
