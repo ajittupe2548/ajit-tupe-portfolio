@@ -22,28 +22,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     liveLink,
     stars,
     forks,
-    lastUpdated,
 }) => {
-    // Function to format the date
-    const formatDate = (dateString: string) => {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('de-DE', {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-        });
-    };
-
     return (
-        <div className='group relative overflow-hidden rounded-xl p-1 transition-all duration-500 hover:shadow-xl flex-grow'>
+        <div className='relative overflow-hidden rounded-xl p-1 transition-all duration-500'>
             <div className='absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-75 transition-all duration-500 group-hover:opacity-100'></div>
-            <div className='relative h-full rounded-lg bg-white p-6 dark:bg-gray-800 transition-all duration-500 dark:bg-opacity-80 backdrop-blur-sm flex flex-col'>
-                <h3 className='mb-3 text-2xl font-bold text-gray-800 dark:text-white'>
-                    {title}
-                </h3>
-                <p className='mb-4 text-gray-600 dark:text-gray-300 flex-grow'>
-                    {description}
-                </p>
+            <div className='relative h-full rounded-lg bg-white p-6 dark:bg-gray-800 transition-all duration-500 dark:bg-opacity-80 flex flex-col'>
+                <h3 className='mb-3 text-2xl font-bold'>{title}</h3>
+                <p className='mb-4  flex-grow'>{description}</p>
                 <div className='mt-auto space-y-4'>
                     <div className='flex flex-wrap gap-2'>
                         {technologies.map((tech, index) => (
@@ -55,17 +40,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             </span>
                         ))}
                     </div>
-                    <div className='flex justify-between items-center text-sm text-gray-600 dark:text-gray-400'>
-                        <div className='flex items-center space-x-4'>
-                            <span className='flex items-center'>
-                                <FaRegStar size={16} className='mr-1' />
-                                {stars}
-                            </span>
-                            <span className='flex items-center'>
-                                <FaCodeFork size={16} className='mr-1' />
-                                {forks}
-                            </span>
-                        </div>
+                    <div className='flex items-center space-x-4'>
+                        <span className='flex items-center'>
+                            <FaRegStar size={16} className='mr-1' />
+                            {stars}
+                        </span>
+                        <span className='flex items-center'>
+                            <FaCodeFork size={16} className='mr-1' />
+                            {forks}
+                        </span>
                     </div>
                     <div className='flex justify-between'>
                         <Link

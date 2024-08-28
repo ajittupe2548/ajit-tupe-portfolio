@@ -49,14 +49,11 @@ const projects: Omit<ProjectCardProps, 'stars' | 'forks' | 'lastUpdated'>[] = [
 
 const Projects: React.FC = () => {
     return (
-        <div
-            className='rounded-lg md:col-span-2 lg:col-span-3 pt-16'
-            id='projects'
-        >
-            <div className='p-4'>
-                <h2 className='text-xl font-bold'>Projects</h2>
-            </div>
-            <div className='grid gap-4 p-4 sm:grid-cols-2'>
+        <div className='pt-16' id='projects'>
+            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
+                Projects
+            </h2>
+            <div className='grid gap-4 sm:grid-cols-2'>
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={index}
