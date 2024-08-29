@@ -11,6 +11,7 @@ module.exports = {
                 border: 'hsl(var(--border))',
                 background: 'var(--background)',
                 primary: {
+                    lightest: 'var(--primary-lightest)',
                     light: 'var(--primary-light)',
                     DEFAULT: 'var(--primary)',
                     dark: 'var(--primary-dark)',
