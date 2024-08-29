@@ -9,7 +9,7 @@ const Introduction: React.FC = () => {
             <div className='text-4xl font-bold text-center sm:text-left'>
                 Hey there!, I'm
                 <br />
-                <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left text-secondary1-front'>
+                <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left text-secondary'>
                     Ajit Tupe.
                 </h1>
                 <br />

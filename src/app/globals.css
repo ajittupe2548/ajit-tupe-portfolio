@@ -7,8 +7,9 @@
         --primary-light: 215, 16%, 47%;
         --primary: 215, 25%, 27%;
         --primary-dark: 0, 0%, 100%;
-        --secondary1-back: 330 81% 60%;
-        --secondary1-front: 330 81% 60%;
+        --secondary-light: hsl(330, 81%, 60%);
+        --secondary: hsl(333, 71%, 51%);
+        --secondary-dark: hsl(335, 78%, 42%);
         --tertiary1-back: 223, 100%, 94%;
         --tertiary1-front: 158 64% 52%;
         --border: 214.3 31.8% 91.4%;
@@ -19,8 +20,9 @@
         --primary-light: 214, 32%, 91%;
         --primary: 215, 20%, 65%;
         --primary-dark: 222, 47%, 11%;
-        --secondary1-back: 330 81% 60%;
-        --secondary1-front: 330 81% 60%;
+        --secondary-light: hsl(330, 81%, 60%);
+        --secondary: hsl(333, 71%, 51%);
+        --secondary-dark: hsl(335, 78%, 42%);
         --tertiary1-back: 222.2 84% 4.9%;
         --tertiary1-front: 158 64% 52%;
         --border: 217.2 32.6% 17.5%;

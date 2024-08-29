@@ -14,17 +14,15 @@ module.exports = {
                     DEFAULT: 'hsl(var(--primary))',
                     dark: 'hsl(var(--primary-dark))',
                 },
-                primary1: {
-                    front: 'hsl(var(--primary1-front))',
-                    back: 'hsl(var(--primary1-back))',
+                secondary: {
+                    light: 'var(--secondary-light)',
+                    DEFAULT: 'var(--secondary)',
+                    dark: 'var(--secondary-dark)',
                 },
-                primary2: {
-                    front: 'hsl(var(--primary2-front))',
-                    back: 'hsl(var(--primary2-back))',
-                },
-                secondary1: {
-                    front: 'hsl(var(--secondary1-front))',
-                    back: 'hsl(var(--secondary1-back))',
+                tertiary: {
+                    light: 'hsl(var(--tertiary-light))',
+                    DEFAULT: 'hsl(var(--tertiary))',
+                    dark: 'hsl(var(--tertiary-dark))',
                 },
                 tertiary1: {
                     front: 'hsl(var(--tertiary1-front))',
@@ -42,10 +40,8 @@ module.exports = {
 
 /*
 light {
-    primary1: black,
-    primary2: gray,
-    primary3: lightGray,
-    secondary1: pink,
-    tertiary1: green,
+    primary: black,
+    secondary: pink,
+    tertiary: green,
 }
 */
