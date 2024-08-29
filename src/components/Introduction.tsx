@@ -17,12 +17,12 @@ const Introduction: React.FC = () => {
                     <span className='text-tertiary1-front'>
                         Software Engineer.
                     </span>
-                    <span className='text-gray-500 ml-2'>
+                    <span className='ml-2'>
                         A self-taught developer with an <br /> interest in
                         Computer Science.
                     </span>
                 </p>
-                <p className='text-base md:text-xl font-normal mt-8 text-gray-500'>
+                <p className='text-base md:text-xl font-normal mt-8'>
                     🚀 Currently specializing in Frontend <br />⚡ Frontend
                     Engineer at{' '}
                     <Link

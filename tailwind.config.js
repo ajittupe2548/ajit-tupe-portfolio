@@ -9,9 +9,18 @@ module.exports = {
         extend: {
             colors: {
                 border: 'hsl(var(--border))',
+                primary: {
+                    light: 'hsl(var(--primary-light))',
+                    DEFAULT: 'hsl(var(--primary))',
+                    dark: 'hsl(var(--primary-dark))',
+                },
                 primary1: {
                     front: 'hsl(var(--primary1-front))',
                     back: 'hsl(var(--primary1-back))',
+                },
+                primary2: {
+                    front: 'hsl(var(--primary2-front))',
+                    back: 'hsl(var(--primary2-back))',
                 },
                 secondary1: {
                     front: 'hsl(var(--secondary1-front))',

@@ -4,8 +4,9 @@
 
 @layer base {
     :root {
-        --primary1-back: 223, 100%, 94%;
-        --primary1-front: 222.2 84% 4.9%;
+        --primary-light: 215, 16%, 47%;
+        --primary: 215, 25%, 27%;
+        --primary-dark: 0, 0%, 100%;
         --secondary1-back: 330 81% 60%;
         --secondary1-front: 330 81% 60%;
         --tertiary1-back: 223, 100%, 94%;
@@ -15,8 +16,9 @@
     }
 
     .dark {
-        --primary1-back: 222.2 84% 4.9%;
-        --primary1-front: 210 40% 98%;
+        --primary-light: 214, 32%, 91%;
+        --primary: 215, 20%, 65%;
+        --primary-dark: 222, 47%, 11%;
         --secondary1-back: 330 81% 60%;
         --secondary1-front: 330 81% 60%;
         --tertiary1-back: 222.2 84% 4.9%;
@@ -30,6 +32,6 @@
         @apply border-border;
     }
     body {
-        @apply bg-primary1-back text-primary1-front;
+        @apply bg-primary-dark text-primary;
     }
 }
