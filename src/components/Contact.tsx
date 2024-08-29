@@ -5,13 +5,12 @@ import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import Link from 'next/link';
 import SocialLinks from './SocialLinks';
+import SubHeading from './SubHeading';
 
 const ProjectsDisplay: React.FC = () => {
     return (
         <div className='pt-16' id='contact'>
-            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
-                Get in touch
-            </h2>
+            <SubHeading>Get in touch</SubHeading>
             <div className='flex flex-col items-center my-4 text-sm'>
                 <p className='text-center'>
                     I'm currently specializing in Front-end Development.

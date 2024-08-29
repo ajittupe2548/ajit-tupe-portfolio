@@ -14,6 +14,7 @@ import { SiTypescript } from 'react-icons/si';
 import { BiLogoMongodb } from 'react-icons/bi';
 import { DiMysql } from 'react-icons/di';
 import { VscVscode } from 'react-icons/vsc';
+import SubHeading from './SubHeading';
 
 const skills = [
     { icon: <FaHtml5 />, name: 'HTML' },
@@ -34,9 +35,7 @@ const skills = [
 const Skills: React.FC = () => {
     return (
         <div className='pt-16' id='skills'>
-            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
-                Skills
-            </h2>
+            <SubHeading>Skills</SubHeading>
             <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
                 {skills.map((skill, index) => (
                     <li

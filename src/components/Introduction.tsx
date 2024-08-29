@@ -9,24 +9,26 @@ const Introduction: React.FC = () => {
             <div className='text-4xl font-bold text-center sm:text-left'>
                 Hey there!, I'm
                 <br />
-                <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left text-pink-500'>
+                <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left text-secondary1-front'>
                     Ajit Tupe.
                 </h1>
                 <br />
                 <p className='text-xl sm:text-3xl'>
-                    <span className='text-emerald-400'>Software Engineer.</span>
+                    <span className='text-tertiary1-front'>
+                        Software Engineer.
+                    </span>
                     <span className='text-gray-500 ml-2'>
                         A self-taught developer with an <br /> interest in
                         Computer Science.
                     </span>
                 </p>
-                <p className='text-base md:text-xl font-normal mt-8 text-gray-400'>
+                <p className='text-base md:text-xl font-normal mt-8 text-gray-500'>
                     🚀 Currently specializing in Frontend <br />⚡ Frontend
                     Engineer at{' '}
                     <Link
                         href='https://www.carwale.com/'
                         target='_blank'
-                        className='text-emerald-400'
+                        className='text-tertiary1-front'
                     >
                         Carwale
                     </Link>

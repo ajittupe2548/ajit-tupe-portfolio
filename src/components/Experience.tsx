@@ -4,6 +4,7 @@ import React from 'react';
 import studyIcon from '../data/work.json';
 import AnimationLottie from './LottieAnimation';
 import TimelineItem from './TimelineItem';
+import SubHeading from './SubHeading';
 
 const experienceItems: TimelineItem[] = [
     {
@@ -35,9 +36,7 @@ const experienceItems: TimelineItem[] = [
 const Timeline: React.FC = () => {
     return (
         <div className='pt-16' id='experience'>
-            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
-                Experience
-            </h2>
+            <SubHeading>Experience</SubHeading>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                 <div className='flex'>
                     <AnimationLottie animationPath={studyIcon} className='' />

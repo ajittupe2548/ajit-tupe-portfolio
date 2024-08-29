@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import SubHeading from './SubHeading';
 
 export interface ProjectCardProps {
     title: string;
@@ -50,9 +51,7 @@ const projects: Omit<ProjectCardProps, 'stars' | 'forks' | 'lastUpdated'>[] = [
 const Projects: React.FC = () => {
     return (
         <div className='pt-16' id='projects'>
-            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
-                Projects
-            </h2>
+            <SubHeading>Projects</SubHeading>
             <div className='grid gap-4 sm:grid-cols-2'>
                 {projects.map((project, index) => (
                     <ProjectCard

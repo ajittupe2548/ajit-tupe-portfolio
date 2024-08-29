@@ -2,6 +2,7 @@ import React from 'react';
 import AnimationLottie from './LottieAnimation';
 import study from '../data/study.json';
 import TimelineItem from './TimelineItem';
+import SubHeading from './SubHeading';
 
 const educationItems: TimelineItem[] = [
     {
@@ -27,9 +28,7 @@ const educationItems: TimelineItem[] = [
 const Timeline: React.FC = () => {
     return (
         <div className='pt-16' id='education'>
-            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
-                Education
-            </h2>
+            <SubHeading>Education</SubHeading>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                 <div className='flex flex-col gap-6'>
                     {educationItems.map((item, index) => (

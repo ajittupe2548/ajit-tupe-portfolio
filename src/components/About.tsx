@@ -1,15 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import heroImage from '@/assets/Ajit.jpg';
+import SubHeading from './SubHeading';
 
 const About: React.FC = () => {
     return (
         <div className='pt-16' id='about'>
-            <h2 className='text-3xl font-bold text-gray-900 dark:text-white text-center mb-6'>
-                Overview
-            </h2>
+            <SubHeading>Overview</SubHeading>
             <div className='flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6'>
-                <div className='flex-1 text-center sm:text-left text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
+                <div className='flex-1 text-center sm:text-left mb-4 leading-relaxed'>
                     <p>
                         Greetings! I'm Ajit Tupe, a dedicated software engineer
                         located in Navi Mumbai, India. My expertise spans HTML,
