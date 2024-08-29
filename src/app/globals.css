@@ -4,27 +4,31 @@
 
 @layer base {
     :root {
-        --primary-light: 215, 16%, 47%;
-        --primary: 215, 25%, 27%;
-        --primary-dark: 0, 0%, 100%;
+        --background: hsl(260, 65%, 95%);
+        --primary-light: hsl(215, 16%, 47%);
+        --primary: hsl(215, 25%, 27%);
+        --primary-dark: hsl(222, 47%, 11%);
         --secondary-light: hsl(330, 81%, 60%);
         --secondary: hsl(333, 71%, 51%);
         --secondary-dark: hsl(335, 78%, 42%);
-        --tertiary1-back: 223, 100%, 94%;
-        --tertiary1-front: 158 64% 52%;
+        --tertiary-light: hsl(158, 64%, 52%);
+        --tertiary: hsl(161, 94%, 30%);
+        --tertiary-dark: hsl(163, 88%, 20%);
         --border: 214.3 31.8% 91.4%;
         --radius: 0.5rem;
     }
 
     .dark {
-        --primary-light: 214, 32%, 91%;
-        --primary: 215, 20%, 65%;
-        --primary-dark: 222, 47%, 11%;
+        --background: hsl(222, 47%, 11%);
+        --primary-light: hsl(214, 32%, 91%);
+        --primary: hsl(215, 20%, 65%);
+        --primary-dark: hsl(222, 47%, 11%);
         --secondary-light: hsl(330, 81%, 60%);
         --secondary: hsl(333, 71%, 51%);
         --secondary-dark: hsl(335, 78%, 42%);
-        --tertiary1-back: 222.2 84% 4.9%;
-        --tertiary1-front: 158 64% 52%;
+        --tertiary-light: hsl(158, 64%, 52%);
+        --tertiary: hsl(161, 94%, 30%);
+        --tertiary-dark: hsl(163, 88%, 20%);
         --border: 217.2 32.6% 17.5%;
     }
 }
@@ -34,6 +38,6 @@
         @apply border-border;
     }
     body {
-        @apply bg-primary-dark text-primary;
+        @apply bg-background text-primary;
     }
 }

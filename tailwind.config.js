@@ -9,10 +9,11 @@ module.exports = {
         extend: {
             colors: {
                 border: 'hsl(var(--border))',
+                background: 'var(--background)',
                 primary: {
-                    light: 'hsl(var(--primary-light))',
-                    DEFAULT: 'hsl(var(--primary))',
-                    dark: 'hsl(var(--primary-dark))',
+                    light: 'var(--primary-light)',
+                    DEFAULT: 'var(--primary)',
+                    dark: 'var(--primary-dark)',
                 },
                 secondary: {
                     light: 'var(--secondary-light)',
@@ -20,13 +21,9 @@ module.exports = {
                     dark: 'var(--secondary-dark)',
                 },
                 tertiary: {
-                    light: 'hsl(var(--tertiary-light))',
-                    DEFAULT: 'hsl(var(--tertiary))',
-                    dark: 'hsl(var(--tertiary-dark))',
-                },
-                tertiary1: {
-                    front: 'hsl(var(--tertiary1-front))',
-                    back: 'hsl(var(--tertiary1-back))',
+                    light: 'var(--tertiary-light)',
+                    DEFAULT: 'var(--tertiary)',
+                    dark: 'var(--tertiary-dark)',
                 },
             },
             borderRadius: {

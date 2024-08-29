@@ -9,7 +9,7 @@ const Navbar = () => {
             Designed and Developed by{' '}
             <Link
                 target='_blank'
-                className='text-tertiary1-front'
+                className='text-tertiary'
                 href='https://www.linkedin.com/in/ajittupe2548/'
             >
                 Ajit Tupe.
@@ -18,7 +18,7 @@ const Navbar = () => {
                 Built with{' '}
                 <Link
                     target='_blank'
-                    className='text-tertiary1-front'
+                    className='text-tertiary'
                     href='https://nextui.org/'
                 >
                     Next.js
@@ -26,7 +26,7 @@ const Navbar = () => {
                 &{' '}
                 <Link
                     target='_blank'
-                    className='text-tertiary1-front'
+                    className='text-tertiary'
                     href='https://tailwindcss.com/'
                 >
                     Tailwind
@@ -34,7 +34,7 @@ const Navbar = () => {
                 Hosted on{' '}
                 <Link
                     target='_blank'
-                    className='text-tertiary1-front'
+                    className='text-tertiary'
                     href='https://vercel.com/'
                 >
                     Vercel.

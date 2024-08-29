@@ -14,9 +14,7 @@ const Introduction: React.FC = () => {
                 </h1>
                 <br />
                 <p className='text-xl sm:text-3xl'>
-                    <span className='text-tertiary1-front'>
-                        Software Engineer.
-                    </span>
+                    <span className='text-tertiary'>Software Engineer.</span>
                     <span className='ml-2'>
                         A self-taught developer with an <br /> interest in
                         Computer Science.
@@ -28,7 +26,7 @@ const Introduction: React.FC = () => {
                     <Link
                         href='https://www.carwale.com/'
                         target='_blank'
-                        className='text-tertiary1-front'
+                        className='text-tertiary'
                     >
                         Carwale
                     </Link>
