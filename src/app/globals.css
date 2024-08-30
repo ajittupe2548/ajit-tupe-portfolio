@@ -9,12 +9,8 @@
         --primary-light: hsl(215, 16%, 47%);
         --primary: hsl(215, 25%, 27%);
         --primary-dark: hsl(222, 47%, 11%);
-        --secondary-light: hsl(330, 81%, 60%);
         --secondary: hsl(333, 71%, 51%);
-        --secondary-dark: hsl(335, 78%, 42%);
-        --tertiary-light: hsl(158, 64%, 52%);
         --tertiary: hsl(161, 94%, 30%);
-        --tertiary-dark: hsl(163, 88%, 20%);
         --border: 214.3 31.8% 91.4%;
         --radius: 0.5rem;
     }
@@ -24,12 +20,8 @@
         --primary-light: hsl(214, 32%, 91%);
         --primary: hsl(215, 20%, 65%);
         --primary-dark: hsl(222, 47%, 11%);
-        --secondary-light: hsl(330, 81%, 60%);
         --secondary: hsl(333, 71%, 51%);
-        --secondary-dark: hsl(335, 78%, 42%);
-        --tertiary-light: hsl(158, 64%, 52%);
         --tertiary: hsl(161, 94%, 30%);
-        --tertiary-dark: hsl(163, 88%, 20%);
         --border: 217.2 32.6% 17.5%;
     }
 }

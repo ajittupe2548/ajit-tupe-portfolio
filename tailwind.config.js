@@ -17,14 +17,10 @@ module.exports = {
                     dark: 'var(--primary-dark)',
                 },
                 secondary: {
-                    light: 'var(--secondary-light)',
                     DEFAULT: 'var(--secondary)',
-                    dark: 'var(--secondary-dark)',
                 },
                 tertiary: {
-                    light: 'var(--tertiary-light)',
                     DEFAULT: 'var(--tertiary)',
-                    dark: 'var(--tertiary-dark)',
                 },
             },
             borderRadius: {
