@@ -9,7 +9,7 @@
         --secondary: #404756;
         --tertiary: #5e687e;
         --brand: hsl(333, 71%, 51%);
-        --link: #087ea4;
+        --link: #0284c7;
         --card: #f6f7f9;
         --border: 214.3 31.8% 91.4%;
         --radius: 0.5rem;
@@ -21,7 +21,7 @@
         --secondary: #ebecf0;
         --tertiary: #99a1b3;
         --brand: hsl(333, 71%, 51%);
-        --link: #58c4dc;
+        --link: #0ea5e9;
         --card: #343a46;
         --border: 217.2 32.6% 17.5%;
     }
@@ -34,4 +34,16 @@
     body {
         @apply bg-background text-secondary;
     }
+}
+
+.link {
+    @apply text-link font-bold;
+}
+
+.link:hover {
+    @apply text-sky-800;
+}
+
+html.dark .link:hover {
+    @apply text-sky-300;
 }

@@ -26,7 +26,7 @@ const Introduction: React.FC = () => {
                     <Link
                         href='https://www.carwale.com/'
                         target='_blank'
-                        className='text-link'
+                        className='link'
                     >
                         Carwale
                     </Link>

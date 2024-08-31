@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             href={githubLink}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='flex items-center text-link transition-colors duration-300'
+                            className='flex items-center link transition-colors duration-300'
                         >
                             <FaGithub className='mr-1' size={16} />
                             <span className='text-sm'>GitHub</span>
@@ -65,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                                 href={liveLink}
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='flex items-center text-link transition-colors duration-300'
+                                className='flex items-center link transition-colors duration-300'
                             >
                                 <FaExternalLinkAlt className='mr-1' size={16} />
                                 <span className='text-sm'>Live Demo</span>
