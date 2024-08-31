@@ -41,11 +41,3 @@ module.exports = {
         },
     },
 };
-
-/*
-light {
-    primary: black,
-    secondary: pink,
-    tertiary: light gray
-}
-*/

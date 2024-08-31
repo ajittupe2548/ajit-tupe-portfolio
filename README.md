@@ -1,4 +1,4 @@
-# Next.js Portfolio
+# Portfolio
 
 This project is a personal portfolio website built with Next.js.
 
@@ -21,8 +21,8 @@ This project is a personal portfolio website built with Next.js.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/ajittupe2548/portfolio.git
-    cd portfolio
+    git clone https://github.com/ajittupe2548/ajit-tupe-portfolio
+    cd ajit-tupe-portfolio
     ```
 
 2. Install dependencies:
@@ -41,16 +41,12 @@ This project is a personal portfolio website built with Next.js.
 
 ## Deployment
 
-This project is set up for easy deployment on Vercel. Connect your GitHub repository to Vercel and it will automatically deploy your main branch.
+This project is set up for easy deployment on Vercel. Connect your GitHub repository to Vercel and it will automatically deploy your master branch.
 
 ## Customization
 
 -   Modify the components in `src/components/` to change the layout and design of your portfolio
 -   Update the `src/app/` directory to add or modify pages
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
