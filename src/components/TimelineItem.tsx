@@ -13,7 +13,7 @@ interface TimelineItem {
 
 const TimelineItem: React.FC<{ item: TimelineItem }> = ({ item }) => (
     <div className='relative'>
-        <div className='p-4 bg-card rounded-lg shadow-md'>
+        <div className='p-4 bg-card rounded-lg hover:shadow-md'>
             <h3 className='text-lg font-medium'>{item.title}</h3>
             <p className='text-sm'>{item.organization}</p>
             <div className='flex justify-between text-sm'>

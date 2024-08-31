@@ -10,17 +10,21 @@ const SOCIAL_LINKS = [
         href: 'https://www.linkedin.com/in/ajittupe2548/',
         icon: FaLinkedin,
     },
-    {
-        name: 'Facebook',
-        href: 'https://www.facebook.com/ajit.tupe.547/',
-        icon: FaFacebook,
-    },
+    // {
+    //     name: 'Facebook',
+    //     href: 'https://www.facebook.com/ajit.tupe.547/',
+    //     icon: FaFacebook,
+    // },
     {
         name: 'Instagram',
         href: 'https://www.instagram.com/ajittupe2548/',
         icon: FaInstagram,
     },
-    { name: 'Twitter', href: 'https://x.com/ajittupe2548', icon: FaXTwitter },
+    {
+        name: 'Twitter',
+        href: 'https://x.com/ajittupe2548',
+        icon: FaXTwitter,
+    },
 ];
 
 function SocialLinks({ className }) {
@@ -31,7 +35,7 @@ function SocialLinks({ className }) {
             {SOCIAL_LINKS.map((item, index) => (
                 <Link
                     target='_blank'
-                    className='transition-all text-brand duration-300'
+                    className='transition-all duration-300'
                     href={item.href}
                     key={index}
                 >

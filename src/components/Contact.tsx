@@ -22,14 +22,14 @@ const ProjectsDisplay: React.FC = () => {
             <div className='flex flex-col sm:flex-row items-center justify-between'>
                 <Link
                     href='mailto:ajittupe2548@gmail.com'
-                    className='flex items-center gap-2 mt-2 md:gap-3'
+                    className='flex items-center gap-2 mt-2'
                 >
                     <FaEnvelope className='w-3 sm:w-4' />
                     <span>ajittupe2548@gmail.com</span>
                 </Link>
                 <Link
                     href='tel:+919869629631'
-                    className='flex items-center gap-2 mt-2 md:gap-3'
+                    className='flex items-center gap-2 mt-2'
                 >
                     <FaPhoneAlt className='w-3 sm:w-4' />
                     <span>+91 9869629631</span>
@@ -37,7 +37,7 @@ const ProjectsDisplay: React.FC = () => {
                 <Link
                     href='https://maps.app.goo.gl/fYiGN6BEC4TMcTYn6'
                     target='_blank'
-                    className='flex items-center gap-2 mt-2 md:gap-3'
+                    className='flex items-center gap-2 mt-2'
                 >
                     <FaLocationDot className='w-3 sm:w-4' />
                     <span>Navi Mumbai, Maharashtra, India</span>

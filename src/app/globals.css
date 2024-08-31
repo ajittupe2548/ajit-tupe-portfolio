@@ -8,7 +8,7 @@
         --primary: #23272f;
         --secondary: #404756;
         --tertiary: #5e687e;
-        --brand: hsl(333, 71%, 51%);
+        --brand: #334155;
         --link: #0284c7;
         --card: #f6f7f9;
         --border: 214.3 31.8% 91.4%;
@@ -16,13 +16,13 @@
     }
 
     .dark {
-        --background: #23272f;
+        --background: #0f172a;
         --primary: #f6f7f9;
         --secondary: #ebecf0;
         --tertiary: #99a1b3;
-        --brand: hsl(333, 71%, 51%);
+        --brand: #38bdf8;
         --link: #0ea5e9;
-        --card: #343a46;
+        --card: #1e293b;
         --border: 217.2 32.6% 17.5%;
     }
 }

@@ -44,7 +44,7 @@ const Introduction: React.FC = () => {
                     </button>
                 </Link>
                 <Link
-                    className='flex items-center gap-2 rounded-full bg-brand px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm uppercase tracking-wider text-white md:font-semibold'
+                    className='flex items-center gap-2 rounded-full border-2 border-solid border-border px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm uppercase tracking-wider text-primary md:font-semibold'
                     role='button'
                     target='_blank'
                     href='https://drive.google.com/file/d/1AE5hnwbQSJ9TM1MVVi7E9GyK39HPrhOq/view?usp=sharing'

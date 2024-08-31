@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
                 {skills.map((skill, index) => (
                     <li
                         key={index}
-                        className='flex flex-col items-center p-4 rounded-lg bg-card transition-all duration-300 hover:scale-105'
+                        className='flex flex-col items-center p-4 rounded-lg bg-card transition-all duration-300 hover:scale-105 hover:shadow-md'
                     >
                         <div className='mb-2'>
                             {React.cloneElement(skill.icon, { size: 24 })}
