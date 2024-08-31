@@ -14,7 +14,7 @@ const Introduction: React.FC = () => {
                 </h1>
                 <br />
                 <p className='text-xl sm:text-3xl'>
-                    <span className='text-link'>Software Engineer.</span>
+                    <span>Software Engineer.</span>
                     <span className='ml-2'>
                         A self-taught developer with an <br /> interest in
                         Computer Science.

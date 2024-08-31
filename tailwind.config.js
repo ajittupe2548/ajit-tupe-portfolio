@@ -13,6 +13,7 @@ module.exports = {
                 primary: 'var(--primary)',
                 secondary: 'var(--secondary)',
                 tertiary: 'var(--tertiary)',
+                card: 'var(--card)',
                 link: 'var(--link)',
                 brand: 'var(--brand)',
             },

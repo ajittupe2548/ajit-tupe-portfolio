@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     return (
         <div className='relative overflow-hidden rounded-xl p-1 transition-all duration-500'>
             <div className='absolute inset-0 bg-brand transition-all duration-500'></div>
-            <div className='relative h-full rounded-lg bg-tertiary p-6 transition-all duration-500 flex flex-col'>
+            <div className='relative h-full rounded-lg bg-card p-6 transition-all duration-500 flex flex-col'>
                 <h3 className='mb-3 text-2xl font-bold'>{title}</h3>
                 <p className='mb-4  flex-grow'>{description}</p>
                 <div className='mt-auto space-y-4'>
