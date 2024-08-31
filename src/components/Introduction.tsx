@@ -5,7 +5,7 @@ import SocialLinks from './SocialLinks';
 
 const Introduction: React.FC = () => {
     return (
-        <div className='flex flex-col items-center sm:items-start'>
+        <div className='flex flex-col items-center sm:items-start pt-4'>
             <div className='text-4xl font-bold text-center sm:text-left'>
                 Hey there!, I'm
                 <br />
