@@ -35,16 +35,16 @@ const Introduction: React.FC = () => {
             <SocialLinks className='my-12' />
             <div className='flex items-center gap-3'>
                 <Link
-                    className='bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-1000'
+                    className='bg-secondary p-[1px] rounded-full transition-all duration-1000'
                     href='#contact'
                 >
-                    <button className='px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-2'>
+                    <button className='px-3 text-xs md:px-8 py-3 md:py-4 rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-2'>
                         <span>Contact me</span>
                         <FaPhoneAlt size={12} />
                     </button>
                 </Link>
                 <Link
-                    className='flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm uppercase tracking-wider text-white md:font-semibold'
+                    className='flex items-center gap-2 rounded-full bg-secondary px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm uppercase tracking-wider text-white md:font-semibold'
                     role='button'
                     target='_blank'
                     href='https://drive.google.com/file/d/1AE5hnwbQSJ9TM1MVVi7E9GyK39HPrhOq/view?usp=sharing'

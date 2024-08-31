@@ -25,8 +25,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
     return (
         <div className='relative overflow-hidden rounded-xl p-1 transition-all duration-500'>
-            <div className='absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-75 transition-all duration-500 group-hover:opacity-100'></div>
-            <div className='relative h-full rounded-lg bg-white p-6 dark:bg-gray-800 transition-all duration-500 dark:bg-opacity-80 flex flex-col'>
+            <div className='absolute inset-0 bg-secondary transition-all duration-500'></div>
+            <div className='relative h-full rounded-lg bg-primary-light p-6 transition-all duration-500 flex flex-col'>
                 <h3 className='mb-3 text-2xl font-bold'>{title}</h3>
                 <p className='mb-4  flex-grow'>{description}</p>
                 <div className='mt-auto space-y-4'>
@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             href={githubLink}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300'
+                            className='flex items-center text-tertiary transition-colors duration-300'
                         >
                             <FaGithub className='mr-1' size={16} />
                             <span className='text-sm'>GitHub</span>
@@ -65,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                                 href={liveLink}
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='flex items-center text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-300 transition-colors duration-300'
+                                className='flex items-center text-tertiary transition-colors duration-300'
                             >
                                 <FaExternalLinkAlt className='mr-1' size={16} />
                                 <span className='text-sm'>Live Demo</span>
