@@ -10,18 +10,11 @@ module.exports = {
             colors: {
                 border: 'hsl(var(--border))',
                 background: 'var(--background)',
-                primary: {
-                    lightest: 'var(--primary-lightest)',
-                    light: 'var(--primary-light)',
-                    DEFAULT: 'var(--primary)',
-                    dark: 'var(--primary-dark)',
-                },
-                secondary: {
-                    DEFAULT: 'var(--secondary)',
-                },
-                tertiary: {
-                    DEFAULT: 'var(--tertiary)',
-                },
+                primary: 'var(--primary)',
+                secondary: 'var(--secondary)',
+                tertiary: 'var(--tertiary)',
+                link: 'var(--link)',
+                brand: 'var(--brand)',
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -36,6 +29,6 @@ module.exports = {
 light {
     primary: black,
     secondary: pink,
-    tertiary: green,
+    tertiary: light gray
 }
 */

@@ -31,7 +31,7 @@ function SocialLinks({ className }) {
             {SOCIAL_LINKS.map((item, index) => (
                 <Link
                     target='_blank'
-                    className='transition-all text-secondary duration-300'
+                    className='transition-all text-brand duration-300'
                     href={item.href}
                     key={index}
                 >

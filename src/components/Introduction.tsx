@@ -9,12 +9,12 @@ const Introduction: React.FC = () => {
             <div className='text-4xl font-bold text-center sm:text-left'>
                 Hey there!, I'm
                 <br />
-                <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left text-secondary'>
+                <h1 className='text-8xl md:text-9xl font-extrabold mt-2 block text-center sm:text-left text-brand'>
                     Ajit Tupe.
                 </h1>
                 <br />
                 <p className='text-xl sm:text-3xl'>
-                    <span className='text-tertiary'>Software Engineer.</span>
+                    <span className='text-link'>Software Engineer.</span>
                     <span className='ml-2'>
                         A self-taught developer with an <br /> interest in
                         Computer Science.
@@ -26,7 +26,7 @@ const Introduction: React.FC = () => {
                     <Link
                         href='https://www.carwale.com/'
                         target='_blank'
-                        className='text-tertiary'
+                        className='text-link'
                     >
                         Carwale
                     </Link>
@@ -35,7 +35,7 @@ const Introduction: React.FC = () => {
             <SocialLinks className='my-12' />
             <div className='flex items-center gap-3'>
                 <Link
-                    className='bg-secondary p-[1px] rounded-full transition-all duration-1000'
+                    className='bg-brand p-[1px] rounded-full transition-all duration-1000'
                     href='#contact'
                 >
                     <button className='px-3 text-xs md:px-8 py-3 md:py-4 rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-2'>
@@ -44,7 +44,7 @@ const Introduction: React.FC = () => {
                     </button>
                 </Link>
                 <Link
-                    className='flex items-center gap-2 rounded-full bg-secondary px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm uppercase tracking-wider text-white md:font-semibold'
+                    className='flex items-center gap-2 rounded-full bg-brand px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm uppercase tracking-wider text-white md:font-semibold'
                     role='button'
                     target='_blank'
                     href='https://drive.google.com/file/d/1AE5hnwbQSJ9TM1MVVi7E9GyK39HPrhOq/view?usp=sharing'
