@@ -18,6 +18,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <html lang='en' style={{ scrollBehavior: 'smooth' }}>
+            <head>
+                <link rel='icon' href='/favicon.ico' />
+            </head>
             <body className={inter.className}>
                 <ThemeProvider attribute='class'>
                     <Navbar />
