@@ -8,7 +8,6 @@ import {
     FaLayerGroup,
     FaPhoneAlt,
     FaBriefcase,
-    FaFileAlt,
     FaTools,
     FaBars,
 } from 'react-icons/fa';
@@ -23,7 +22,6 @@ const navLinks = [
     { name: 'Experience', href: '/#experience', icon: FaBriefcase },
     { name: 'Projects', href: '/#projects', icon: FaLayerGroup },
     { name: 'Contact', href: '/#contact', icon: FaPhoneAlt },
-    // { name: 'Resume', href: '/resume', icon: FaFileAlt },
 ];
 
 const Navbar = () => {
@@ -71,7 +69,7 @@ const Navbar = () => {
                         </div>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className='inline-flex items-center justify-center p-2 rounded-md focus:outline-none'
+                            className='inline-flex items-center justify-center p-2 rounded-md focus:outline-none hover:text-primary'
                         >
                             <span className='sr-only'>Open main menu</span>
                             {!isOpen ? (
@@ -86,7 +84,7 @@ const Navbar = () => {
 
             {isOpen && (
                 <motion.div
-                    className='md:hidden backdrop-blur-md bg-opacity-70'
+                    className='md:hidden backdrop-blur-md bg-opacity-70 over:text-primary'
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
@@ -96,7 +94,7 @@ const Navbar = () => {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className='px-3 py-2 rounded-md text-base font-medium flex items-center'
+                                className='px-3 py-2 rounded-md text-base font-medium flex items-center hover:text-primary'
                                 onClick={handleMobileNavlinkClick}
                             >
                                 <link.icon size={16} className='mr-2' />

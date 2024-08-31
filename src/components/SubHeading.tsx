@@ -1,8 +1,10 @@
 import React from 'react';
 
-function SubHeading({ children }) {
+function SubHeading({ children, className = 'mb-6' }) {
     return (
-        <h2 className='text-3xl font-bold text-center mb-6 text-primary'>
+        <h2
+            className={`text-3xl font-bold text-center text-primary ${className}`}
+        >
             {children}
         </h2>
     );

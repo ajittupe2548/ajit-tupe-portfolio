@@ -29,7 +29,7 @@ const Timeline: React.FC = () => {
     return (
         <div className='pt-16' id='education'>
             <SubHeading>Education</SubHeading>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-8'>
                 <div className='flex flex-col gap-6'>
                     {educationItems.map((item, index) => (
                         <TimelineItem key={index} item={item} />

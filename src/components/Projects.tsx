@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
     return (
         <div className='pt-16' id='projects'>
             <SubHeading>Projects</SubHeading>
-            <div className='grid gap-4 sm:grid-cols-2'>
+            <div className='grid gap-6 sm:grid-cols-2'>
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={index}

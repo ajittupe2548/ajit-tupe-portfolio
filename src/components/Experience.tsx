@@ -36,8 +36,8 @@ const experienceItems: TimelineItem[] = [
 const Timeline: React.FC = () => {
     return (
         <div className='pt-16' id='experience'>
-            <SubHeading>Experience</SubHeading>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+            <SubHeading className='mb-0 sm:mb-6'>Experience</SubHeading>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-8'>
                 <div className='flex'>
                     <AnimationLottie animationPath={studyIcon} className='' />
                 </div>

@@ -9,7 +9,7 @@ import SubHeading from './SubHeading';
 
 const ProjectsDisplay: React.FC = () => {
     return (
-        <div className='pt-16' id='contact'>
+        <div className='pt-4 sm:pt-16' id='contact'>
             <SubHeading>Get in touch</SubHeading>
             <div className='flex flex-col items-center my-4 text-sm'>
                 <p className='text-center'>
