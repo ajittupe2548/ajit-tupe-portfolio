@@ -25,14 +25,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
     return (
         <div className='relative overflow-hidden h-full rounded-xl bg-card p-6 transition-all duration-300 flex flex-col'>
-            <h3 className='mb-3 text-2xl font-bold'>{title}</h3>
+            <h3 className='mb-3 text-2xl font-bold text-primary'>{title}</h3>
             <p className='mb-4  flex-grow'>{description}</p>
             <div className='mt-auto space-y-4'>
                 <div className='flex flex-wrap gap-2'>
                     {technologies.map((tech, index) => (
                         <span
                             key={index}
-                            className='rounded-full bg-white px-3 py-1 text-xs font-semibold'
+                            className='rounded-full bg-pill px-3 py-1 text-xs font-semibold'
                         >
                             {tech}
                         </span>

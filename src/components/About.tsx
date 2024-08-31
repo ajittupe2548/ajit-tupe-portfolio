@@ -28,7 +28,7 @@ const About: React.FC = () => {
                 <Image
                     src={heroImage}
                     alt="Ajit's profile picture"
-                    className='rounded-full shadow-md h-60 w-60 object-cover object-center ring-4 ring-blue-500 dark:ring-blue-400'
+                    className='rounded-full shadow-md h-64 w-64 object-cover object-center'
                 />
             </div>
         </div>

@@ -47,7 +47,7 @@ const Navbar = () => {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className='relative px-3 py-2 rounded-md text-sm font-medium   group flex items-center'
+                                    className='relative px-3 py-2 rounded-md text-sm font-medium   group flex items-center hover:text-primary'
                                 >
                                     <link.icon size={16} className='mr-2' />
                                     {link.name}
