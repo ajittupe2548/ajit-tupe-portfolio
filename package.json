@@ -21,8 +21,10 @@
     },
     "keywords": [
         "next",
-        "boilerplate",
-        "react"
+        "portfolio",
+        "react",
+        "tailwind",
+        "lottie"
     ],
     "author": "Ajit Tupe",
     "license": "MIT",
