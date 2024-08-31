@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     forks,
 }) => {
     return (
-        <div className='relative overflow-hidden h-full rounded-xl bg-card p-6 transition-all duration-300 flex flex-col'>
+        <div className='relative overflow-hidden h-full rounded-xl bg-card p-6 flex flex-col hoverScale'>
             <h3 className='mb-3 text-2xl font-bold text-primary'>{title}</h3>
             <p className='mb-4  flex-grow'>{description}</p>
             <div className='mt-auto space-y-4'>

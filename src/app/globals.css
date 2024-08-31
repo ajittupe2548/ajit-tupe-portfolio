@@ -5,9 +5,9 @@
 @layer base {
     :root {
         --background: #fff;
-        --primary: #23272f;
-        --secondary: #404756;
-        --tertiary: #5e687e;
+        --primary: #020617;
+        --secondary: #475569;
+        --tertiary: #64748b;
         --brand: #334155;
         --link: #0284c7;
         --card: #f6f7f9;
@@ -18,9 +18,9 @@
 
     .dark {
         --background: #0f172a;
-        --primary: #f6f7f9;
-        --secondary: #ebecf0;
-        --tertiary: #99a1b3;
+        --primary: #f1f5f9;
+        --secondary: #94a3b8;
+        --tertiary: #64748b;
         --brand: #38bdf8;
         --link: #0ea5e9;
         --card: #1e293b;
@@ -39,17 +39,33 @@
 }
 
 .link {
-    @apply text-link font-bold;
+    @apply text-link font-bold hover:text-sky-800;
 }
 
-.link:hover {
-    @apply text-sky-800;
-}
-
-html.dark .link:hover {
-    @apply text-sky-300;
+html.dark .link {
+    @apply hover:text-sky-300;
 }
 
 .btnShadow {
     box-shadow: inset 0 0 0 1px #d9dbe3;
+}
+
+.filledBtn {
+    @apply bg-link hover:bg-sky-700;
+}
+
+html.dark .filledBtn {
+    @apply hover:bg-sky-400;
+}
+
+.unfilledBtn {
+    @apply hover:bg-gray-200;
+}
+
+html.dark .unfilledBtn {
+    @apply hover:bg-slate-700;
+}
+
+.hoverScale {
+    @apply transition-all duration-200 hover:scale-[1.01] hover:shadow-md;
 }

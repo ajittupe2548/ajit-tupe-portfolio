@@ -15,6 +15,7 @@ import {
 import { FaXmark } from 'react-icons/fa6';
 
 import ThemeToggle from './ThemeToggle';
+import Logo from './Logo';
 
 const navLinks = [
     { name: 'About', href: '/#about', icon: FaRegUser },
@@ -38,7 +39,7 @@ const Navbar = () => {
                 <div className='flex items-center justify-between h-16'>
                     <div className='flex items-center'>
                         <Link href='/' className='text-2xl font-bold'>
-                            <span className='text-brand'>AT</span>
+                            <Logo />
                         </Link>
                     </div>
                     <div className='hidden md:block'>
