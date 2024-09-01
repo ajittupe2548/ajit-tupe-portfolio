@@ -32,7 +32,7 @@ A library for creating animations and transitions in React applications with eas
 
 ### sharp
 
-A high-performance image processing library for resizing, converting, and manipulating images.
+A high-performance image processing library for resizing, converting, and manipulating images. Not used in project but required to build next project.
 
 -   Features: Supports multiple image formats (JPEG, PNG, WebP, etc.), enables fast image resizing and optimization, reduces file sizes for web use, performs image transformations like cropping and rotation, works efficiently in Node.js environments.
 
@@ -41,6 +41,12 @@ A high-performance image processing library for resizing, converting, and manipu
 A library that provides popular icons as React components.
 
 -   Features: Includes icons from various icon sets (FontAwesome, Material Design, etc.), easy to use and customize with props, lightweight and optimized for performance, integrates seamlessly into React applications.
+
+### lottie-react
+
+A React library for rendering Adobe After Effects animations using Lottie.
+
+Features: Supports vector-based animations in React apps, lightweight and efficient rendering, customizable playback controls (e.g., loop, autoplay), works seamlessly with JSON animation files exported from Adobe After Effects.
 
 ## devDependencies
 
