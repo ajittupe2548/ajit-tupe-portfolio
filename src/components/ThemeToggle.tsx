@@ -2,13 +2,20 @@
 
 import { LuSun, LuMoon } from 'react-icons/lu';
 import { useTheme } from 'next-themes';
+import { trackData } from '@/utils/index';
 
 export default function ThemeToggle() {
     const { theme, setTheme } = useTheme();
 
+    const handleThemeClick = () => {
+        const newTheme = theme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+        trackData(true, 'navbar', newTheme)
+    }
+
     return (
         <button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={handleThemeClick}
             className='hover:text-primary'
         >
             <LuSun
