@@ -44,7 +44,7 @@ const ProjectsDisplay: React.FC = () => {
                 </Link>
             </div>
             <div className='my-8 flex items-center gap-5 justify-center'>
-                <SocialLinks className='' />
+                <SocialLinks className='' section='contact' />
             </div>
         </div>
     );

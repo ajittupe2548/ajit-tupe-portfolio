@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FaDownload, FaPhoneAlt } from 'react-icons/fa';
 import SocialLinks from './SocialLinks';
+import { trackData } from '@/utils';
 
 const Introduction: React.FC = () => {
     return (
@@ -27,16 +28,18 @@ const Introduction: React.FC = () => {
                         href='https://www.carwale.com/'
                         target='_blank'
                         className='link'
+                        onClick={() => trackData(true, 'intro', 'carwale')}
                     >
                         Carwale
                     </Link>
                 </p>
             </div>
-            <SocialLinks className='my-12' />
+            <SocialLinks className='my-12' section='intro' />
             <div className='flex items-center gap-3'>
                 <Link
                     className='filledBtn px-3 text-xs md:px-8 py-3 md:py-4 rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-2'
                     href='#contact'
+                    onClick={() => trackData(true, 'intro', 'contact')}
                 >
                     <span>Contact me</span>
                     <FaPhoneAlt size={12} />
@@ -46,6 +49,7 @@ const Introduction: React.FC = () => {
                     role='button'
                     target='_blank'
                     href='https://drive.google.com/file/d/1AE5hnwbQSJ9TM1MVVi7E9GyK39HPrhOq/view?usp=sharing'
+                    onClick={() => trackData(true, 'intro', 'resume')}
                 >
                     <span>Get Resume</span>
                     <FaDownload size={12} />

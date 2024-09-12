@@ -10,3 +10,6 @@
 
 # next
 /.next
+
+# env variable
+.env

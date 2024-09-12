@@ -12,6 +12,7 @@ import {
     FaBars,
 } from 'react-icons/fa';
 import { FaXmark } from 'react-icons/fa6';
+import { trackData } from '@/utils';
 
 import ThemeToggle from './ThemeToggle';
 import Logo from './Logo';
@@ -36,7 +37,7 @@ const Navbar = () => {
             <nav className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-between h-16'>
                     <div className='flex items-center'>
-                        <Link href='/' className='text-2xl font-bold'>
+                        <Link href='/' className='text-2xl font-bold' onClick={() => trackData(true, 'navbar', 'logo')}>
                             <Logo />
                         </Link>
                     </div>
@@ -47,6 +48,7 @@ const Navbar = () => {
                                     key={link.name}
                                     href={link.href}
                                     className='relative px-3 py-2 rounded-md text-sm font-medium   group flex items-center hover:text-primary'
+                                    onClick={() => trackData(true, 'navbar', link.name.toLowerCase())}
                                 >
                                     <link.icon size={16} className='mr-2' />
                                     {link.name}
