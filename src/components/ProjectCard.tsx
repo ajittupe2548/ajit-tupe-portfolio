@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt, FaRegStar } from 'react-icons/fa';
 import { FaCodeFork } from 'react-icons/fa6';
+import { trackData } from '@/utils';
 
 interface ProjectCardProps {
     title: string;
@@ -54,6 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         target='_blank'
                         rel='noopener noreferrer'
                         className='flex items-center link transition-colors duration-300'
+                        onClick={() => trackData(true, `projects ${title}`, 'github')}
                     >
                         <FaGithub className='mr-1' size={16} />
                         <span className='text-sm'>GitHub</span>
@@ -64,6 +66,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             target='_blank'
                             rel='noopener noreferrer'
                             className='flex items-center link transition-colors duration-300'
+                            onClick={() => trackData(true, `projects ${title}`, 'liveDemo')}
                         >
                             <FaExternalLinkAlt className='mr-1' size={16} />
                             <span className='text-sm'>Live Demo</span>

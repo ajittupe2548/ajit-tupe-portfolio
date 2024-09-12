@@ -2,7 +2,7 @@
 
 import { LuSun, LuMoon } from 'react-icons/lu';
 import { useTheme } from 'next-themes';
-import { trackData } from '@/utils/index';
+import { trackData } from '@/utils';
 
 export default function ThemeToggle() {
     const { theme, setTheme } = useTheme();
@@ -10,7 +10,7 @@ export default function ThemeToggle() {
     const handleThemeClick = () => {
         const newTheme = theme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
-        trackData(true, 'navbar', newTheme)
+        trackData(true, 'navbar', newTheme);
     }
 
     return (

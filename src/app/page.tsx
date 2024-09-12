@@ -8,7 +8,7 @@ import FeaturedProjects from '@/components/Projects';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import Contact from '@/components/Contact';
-import { trackData } from '@/utils/index';
+import { trackData } from '@/utils';
 
 const HomePage: React.FC = () => {
     useEffect(() => {

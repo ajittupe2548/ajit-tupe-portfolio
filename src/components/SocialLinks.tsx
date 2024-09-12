@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { trackData } from '@/utils';
 
 const SOCIAL_LINKS = [
     { name: 'GitHub', href: 'https://github.com/ajittupe2548', icon: FaGithub },
@@ -27,7 +28,7 @@ const SOCIAL_LINKS = [
     },
 ];
 
-function SocialLinks({ className }) {
+function SocialLinks({ className, section }) {
     return (
         <div
             className={`flex items-center gap-5 justify-center sm:justify-start ${className}`}
@@ -38,6 +39,7 @@ function SocialLinks({ className }) {
                     className='transition-all duration-300 hover:text-primary'
                     href={item.href}
                     key={index}
+                    onClick={() => trackData(true, section, item.name.toLowerCase())}
                 >
                     <item.icon size={30} />
                 </Link>

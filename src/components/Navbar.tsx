@@ -12,7 +12,7 @@ import {
     FaBars,
 } from 'react-icons/fa';
 import { FaXmark } from 'react-icons/fa6';
-import { trackData } from '@/utils/index';
+import { trackData } from '@/utils';
 
 import ThemeToggle from './ThemeToggle';
 import Logo from './Logo';
