@@ -15,9 +15,10 @@ export const trackData = async (isInteractive, section, label) => {
         await fetch(url, {
             redirect: "follow",
             method: 'POST',
+            mode: "no-cors",
+            cache: "no-cache",
             headers: {
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-                "Content-Type": "text/plain;charset=utf-8",
+                'Content-Type': 'application/x-www-form-urlencoded',
             },
             body: new URLSearchParams(data).toString(),
         });
