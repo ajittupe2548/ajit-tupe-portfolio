@@ -9,13 +9,15 @@ export const trackData = async (isInteractive, section, label) => {
         isMobile: /android|iphone|ipad|iPod/i.test(userAgent).toString(),
     };
 
-    const queryString = new URLSearchParams(data).toString();
-
-    const url = `https://script.google.com/macros/s/${process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID}/exec?${queryString}`;
+    const url = `https://script.google.com/macros/s/${process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID}/exec`;
 
     try {
         await fetch(url, {
             method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams(data).toString(),
         });
     } catch (error) {
         console.error('Error:', error);
