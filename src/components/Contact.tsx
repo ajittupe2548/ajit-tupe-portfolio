@@ -6,6 +6,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 import Link from 'next/link';
 import SocialLinks from './SocialLinks';
 import SubHeading from './SubHeading';
+import { trackData } from '@/utils';
 
 const ProjectsDisplay: React.FC = () => {
     return (
@@ -23,6 +24,7 @@ const ProjectsDisplay: React.FC = () => {
                 <Link
                     href='mailto:ajittupe2548@gmail.com'
                     className='flex items-center gap-2 mt-2 link'
+                    onClick={() => trackData(true, 'contact', 'email')}
                 >
                     <FaEnvelope className='w-3 sm:w-4' />
                     <span>ajittupe2548@gmail.com</span>
@@ -30,6 +32,7 @@ const ProjectsDisplay: React.FC = () => {
                 <Link
                     href='tel:+919869629631'
                     className='flex items-center gap-2 mt-2 link'
+                    onClick={() => trackData(true, 'contact', 'mobile')}
                 >
                     <FaPhoneAlt className='w-3 sm:w-4' />
                     <span>+91 9869629631</span>
@@ -38,6 +41,7 @@ const ProjectsDisplay: React.FC = () => {
                     href='https://maps.app.goo.gl/fYiGN6BEC4TMcTYn6'
                     target='_blank'
                     className='flex items-center gap-2 mt-2 link'
+                    onClick={() => trackData(true, 'contact', 'map')}
                 >
                     <FaLocationDot className='w-3 sm:w-4' />
                     <span>Navi Mumbai, Maharashtra, India</span>
