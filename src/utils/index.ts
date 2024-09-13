@@ -9,16 +9,13 @@ export const trackData = async (isInteractive, section, label) => {
         isMobile: /android|iphone|ipad|iPod/i.test(userAgent).toString(),
     };
 
-    const url = 'https://script.google.com/macros/s/'+process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID+'/exec';
-
     try {
-        await fetch(url, {
+        await fetch('/api/proxy', {
             method: 'POST',
-            mode: "no-cors",
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/json',
             },
-            body: new URLSearchParams(data).toString(),
+            body: JSON.stringify(data)
         });
     } catch (error) {
         console.error('Error:', error);
