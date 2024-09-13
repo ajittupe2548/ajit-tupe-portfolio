@@ -1,21 +1,24 @@
 export const trackData = async (isInteractive, section, label) => {
     /* @ts-ignore */
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const now = new Date();
 
-    const data = new URLSearchParams({
+    const data = {
         section,
         label,
         action: isInteractive ? 'click' : 'impression',
         isMobile: /android|iphone|ipad|iPod/i.test(userAgent).toString(),
-    });
+        date: now.toLocaleDateString(),
+        time: now.toLocaleTimeString(),
+    };
 
     try {
         await fetch('/api/proxy', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/json',
             },
-            body: data.toString(),
+            body: JSON.stringify(data),
         });
     } catch (error) {
         console.error('Error:', error);

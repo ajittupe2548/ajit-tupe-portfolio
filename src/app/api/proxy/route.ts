@@ -1,20 +1,14 @@
 export async function POST(request) {
     try {
-        const formData = await request.formData();
-
-        // Convert the formData object to URLSearchParams
-        const body = new URLSearchParams();
-        for (const pair of formData.entries()) {
-            body.append(pair[0], pair[1]);
-        }
+        const formData = await request.json();
 
         const url = `https://script.google.com/macros/s/${process.env.GOOGLE_SHEET_ID}/exec`;
         const response = await fetch(url, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/json',
             },
-            body: body.toString(),
+            body: JSON.stringify(formData),
         });
 
         const data = await response.json();
