@@ -13,10 +13,8 @@ export const trackData = async (isInteractive, section, label) => {
 
     try {
         await fetch(url, {
-            redirect: "follow",
             method: 'POST',
             mode: "no-cors",
-            cache: "no-cache",
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
             },
