@@ -12,4 +12,5 @@
 /.next
 
 # env variable
-.env
+.env.local
+.env.prod
