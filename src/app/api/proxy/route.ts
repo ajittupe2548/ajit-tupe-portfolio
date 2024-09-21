@@ -1,9 +1,9 @@
 export async function POST(request) {
-    if (process.env.GOOGLE_SHEET_ID) {
+    if (process.env.SCRIPT_DEPLOYMENT_ID) {
         try {
             const formData = await request.json();
 
-            const url = `https://script.google.com/macros/s/${process.env.GOOGLE_SHEET_ID}/exec`;
+            const url = `https://script.google.com/macros/s/${process.env.SCRIPT_DEPLOYMENT_ID}/exec`;
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
