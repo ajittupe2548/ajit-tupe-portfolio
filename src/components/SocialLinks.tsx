@@ -21,11 +21,11 @@ const SOCIAL_LINKS = [
         href: 'https://www.instagram.com/ajittupe2548/',
         icon: FaInstagram,
     },
-    {
-        name: 'Twitter',
-        href: 'https://x.com/ajittupe2548',
-        icon: FaXTwitter,
-    },
+    // {
+    //     name: 'Twitter',
+    //     href: 'https://x.com/ajittupe2548',
+    //     icon: FaXTwitter,
+    // },
 ];
 
 function SocialLinks({ className, section }) {
@@ -39,7 +39,9 @@ function SocialLinks({ className, section }) {
                     className='transition-all duration-300 hover:text-primary'
                     href={item.href}
                     key={index}
-                    onClick={() => trackData(true, section, item.name.toLowerCase())}
+                    onClick={() =>
+                        trackData(true, section, item.name.toLowerCase())
+                    }
                 >
                     <item.icon size={30} />
                 </Link>

@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         </span>
                     ))}
                 </div>
-                <div className='flex items-center space-x-4'>
+                {/* <div className='flex items-center space-x-4'>
                     <span className='flex items-center'>
                         <FaRegStar size={16} className='mr-1' />
                         {stars}
@@ -48,14 +48,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         <FaCodeFork size={16} className='mr-1' />
                         {forks}
                     </span>
-                </div>
+                </div> */}
                 <div className='flex justify-between'>
                     <Link
                         href={githubLink}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='flex items-center link transition-colors duration-300'
-                        onClick={() => trackData(true, `projects ${title}`, 'github')}
+                        onClick={() =>
+                            trackData(true, `projects ${title}`, 'github')
+                        }
                     >
                         <FaGithub className='mr-1' size={16} />
                         <span className='text-sm'>GitHub</span>
@@ -66,7 +68,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             target='_blank'
                             rel='noopener noreferrer'
                             className='flex items-center link transition-colors duration-300'
-                            onClick={() => trackData(true, `projects ${title}`, 'liveDemo')}
+                            onClick={() =>
+                                trackData(true, `projects ${title}`, 'liveDemo')
+                            }
                         >
                             <FaExternalLinkAlt className='mr-1' size={16} />
                             <span className='text-sm'>Live Demo</span>

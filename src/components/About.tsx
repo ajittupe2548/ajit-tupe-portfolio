@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import heroImage from '@/assets/Ajit.jpg';
+import heroImage from '@/assets/AjitImage.jpg';
 import SubHeading from './SubHeading';
 
 const About: React.FC = () => {
