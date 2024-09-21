@@ -39,6 +39,22 @@ const projects: Omit<ProjectCardProps, 'stars' | 'forks' | 'lastUpdated'>[] = [
         liveLink: 'https://sync-board-client.vercel.app/',
     },
     {
+        title: 'Portfolio Website',
+        description:
+            'Designed and developed a personal portfolio website using Next.js and Tailwind CSS, effectively showcasing my projects and skills.',
+        technologies: [
+            'HTML',
+            'CSS',
+            'Typescript',
+            'Next',
+            'Tailwind CSS',
+            'Vercel',
+            'Apps Script',
+        ],
+        githubLink: 'https://github.com/ajittupe2548/ajit-tupe-portfolio',
+        liveLink: 'https://ajit-tupe-portfolio.vercel.app/',
+    },
+    {
         title: 'Memories App',
         description:
             'A fully responsive Memories app using MERN stack with guidance from the JavaScript Mastery YouTube channel.',
