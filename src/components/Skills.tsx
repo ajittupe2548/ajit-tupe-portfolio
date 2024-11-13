@@ -29,7 +29,6 @@ const skills = [
     { icon: <DiMysql />, name: 'MySQL' },
     { icon: <FaGit />, name: 'Git' },
     { icon: <FaGithub />, name: 'GitHub' },
-    { icon: <VscVscode />, name: 'VS Code' },
 ];
 
 const Skills: React.FC = () => {
