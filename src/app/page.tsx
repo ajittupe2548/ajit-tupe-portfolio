@@ -15,7 +15,8 @@ const HomePage: React.FC = () => {
         const url = document.referrer;
         let siteName = 'local';
         if (url) {
-            siteName = url.match(/\/\/(?:www\.)?([^:\/]+)/)[1];
+            const match = url?.match(/\/\/(?:www\.)?([^:\/]+)/);
+            siteName = match ? match[1] : '-';
         }
         trackData(false, 'page', siteName);
     }, []);
