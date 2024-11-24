@@ -13,7 +13,6 @@ import { RiNextjsFill } from 'react-icons/ri';
 import { SiTypescript } from 'react-icons/si';
 import { BiLogoMongodb } from 'react-icons/bi';
 import { DiMysql } from 'react-icons/di';
-import { VscVscode } from 'react-icons/vsc';
 import SubHeading from './SubHeading';
 
 const skills = [

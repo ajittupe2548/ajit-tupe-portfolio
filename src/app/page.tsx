@@ -12,7 +12,12 @@ import { trackData } from '@/utils';
 
 const HomePage: React.FC = () => {
     useEffect(() => {
-        trackData(false, 'page', 'page');
+        const url = document.referrer;
+        let siteName = 'local';
+        if (url) {
+            siteName = url.match(/\/\/(?:www\.)?([^:\/]+)/)[1];
+        }
+        trackData(false, 'page', siteName);
     }, []);
 
     return (
