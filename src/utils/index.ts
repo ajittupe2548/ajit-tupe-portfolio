@@ -9,7 +9,7 @@ export const trackData = async (isInteractive, section, label) => {
         action: isInteractive ? 'click' : 'impression',
         isMobile: /android|iphone|ipad|iPod/i.test(userAgent).toString(),
         date: now.toLocaleDateString(),
-        time: now.toLocaleTimeString(),
+        time: now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' }),
     };
 
     try {
