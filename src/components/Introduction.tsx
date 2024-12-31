@@ -48,7 +48,7 @@ const Introduction: React.FC = () => {
                     className='unfilledBtn flex items-center gap-2 rounded-full btnShadow px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm uppercase tracking-wider text-primary md:font-semibold'
                     role='button'
                     target='_blank'
-                    href='https://drive.google.com/file/d/1TSZoJmUD2afHxbw8c96jKGSpp_Brdhlh/view?usp=sharing'
+                    href='https://drive.google.com/file/d/14HHwNencvyK2iwU8pFcWCKZV5D8KEy4e/view'
                     onClick={() => trackData(true, 'intro', 'resume')}
                 >
                     <span>Get Resume</span>
