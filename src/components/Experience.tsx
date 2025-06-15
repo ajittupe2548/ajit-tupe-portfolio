@@ -13,7 +13,7 @@ const experienceItems: TimelineItem[] = [
         date: 'April 2024 - Present',
         location: 'Mumbai, India · Hybrid',
         description:
-            'Automated interactive template creation with a configurable panel, reducing template creation time by 70% and eliminating manual front-end intervention.',
+            'Improved performance by 20% by optimizing DOM structure and implementing counter-based hashing for atomic class names. Built developer tools and automations, including a CSS auto-suggestion tool and a pre-commit hook, boosting consistency and speeding up development.',
     },
     {
         title: 'Frontend Developer',
@@ -21,7 +21,7 @@ const experienceItems: TimelineItem[] = [
         date: 'April 2022 - March 2024',
         location: 'Mumbai, India · Hybrid',
         description:
-            'Introduced the Ozone components system, facilitating multi-platform use of common compound components.',
+            'Led the React migration of BikeWale’s platform from .NET Razor pages, achieving 60% component reusability and major SEO gains. Boosted user engagement by 75%+ through Core Web Vitals improvements, accessibility enhancements, and performance tuning.',
     },
     {
         title: 'Associate Frontend Developer',
@@ -29,7 +29,7 @@ const experienceItems: TimelineItem[] = [
         date: 'July 2021 - Mar 2022',
         location: 'Mumbai, India · Hybrid',
         description:
-            'Actively contributed to the development and maintenance of React and React Native components within the internal Oxygen Library.',
+            'Developed event-based microsites like Trackday, OffroadDay and WomenInMobility, serving 50k+ daily users.',
     },
 ];
 
