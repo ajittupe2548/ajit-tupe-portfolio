@@ -8,7 +8,7 @@ interface ProjectCardProps {
     title: string;
     description: string;
     technologies: string[];
-    githubLink: string;
+    githubLink: string | null;
     liveLink?: string;
     stars: number;
     forks: number;
@@ -50,18 +50,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     </span>
                 </div> */}
                 <div className='flex justify-between'>
-                    <Link
-                        href={githubLink}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='flex items-center link transition-colors duration-300'
-                        onClick={() =>
-                            trackData(true, `projects ${title}`, 'github')
-                        }
-                    >
-                        <FaGithub className='mr-1' size={16} />
-                        <span className='text-sm'>GitHub</span>
-                    </Link>
+                    {githubLink && (
+                        <Link
+                            href={githubLink}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='flex items-center link transition-colors duration-300'
+                            onClick={() =>
+                                trackData(true, `projects ${title}`, 'github')
+                            }
+                        >
+                            <FaGithub className='mr-1' size={16} />
+                            <span className='text-sm'>GitHub</span>
+                        </Link>
+                    )}
                     {liveLink && (
                         <Link
                             href={liveLink}

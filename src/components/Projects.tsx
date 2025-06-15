@@ -6,7 +6,7 @@ export interface ProjectCardProps {
     title: string;
     description: string;
     technologies: string[];
-    githubLink: string;
+    githubLink: string | null;
     liveLink: string;
     stars: number;
     forks: number;
@@ -35,7 +35,7 @@ const projects: Omit<ProjectCardProps, 'stars' | 'forks' | 'lastUpdated'>[] = [
             'Socket',
             'Node',
         ],
-        githubLink: 'https://github.com/ajittupe2548/sync-board-client',
+        githubLink: null,
         liveLink: 'https://sync-board-client.vercel.app/',
     },
     {

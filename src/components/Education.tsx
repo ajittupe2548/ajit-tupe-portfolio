@@ -9,7 +9,7 @@ const educationItems: TimelineItem[] = [
         title: 'BE in Mechanical Engineering',
         organization: 'A. C. Patil College of Engineering, Navi Mumbai',
         date: 'May 2017 - May 2021',
-        grade: '8.68 CGPA',
+        grade: '8.48 CGPA',
     },
     {
         title: 'Higher Secondary School',
