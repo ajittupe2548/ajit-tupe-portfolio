@@ -35,7 +35,7 @@ const projects: Omit<ProjectCardProps, 'stars' | 'forks' | 'lastUpdated'>[] = [
             'Socket',
             'Node',
         ],
-        githubLink: null,
+        githubLink: 'https://github.com/ajittupe2548/sync-board-client',
         liveLink: 'https://sync-board-client.vercel.app/',
     },
     {
