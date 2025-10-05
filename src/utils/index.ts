@@ -12,15 +12,17 @@ export const trackData = async (isInteractive, section, label) => {
         time: now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' }),
     };
 
-    try {
-        await fetch('/api/proxy', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
-    } catch (error) {
-        console.error('Error:', error);
-    }
+    // Uncomment below code to start tracking
+
+    // try {
+    //     await fetch('/api/proxy', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify(data),
+    //     });
+    // } catch (error) {
+    //     console.error('Error:', error);
+    // }
 };
